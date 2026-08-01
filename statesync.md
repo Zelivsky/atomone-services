@@ -1,120 +1,44 @@
-# AtomOne State Sync Guide
+# AtomOne State Sync
 
-Fast node synchronization via state sync protocol. No need to download snapshots manually.
+Fast node synchronization via state sync protocol. No need to sync from genesis.
 
-## Prerequisites
-
-- Freshly initialized node (or empty data directory)
-- Network connectivity to RPC servers
-
-## Setup
-
-### 1. Initialize Node
+## State Sync
 
 ```bash
-atomoned init "your-moniker" --chain-id atomone-1
-```
-
-### 2. Download Genesis
-
-```bash
-curl -s https://raw.githubusercontent.com/atomone-hub/atomone/main/genesis/genesis.json > $HOME/.atomone/config/genesis.json
-```
-
-### 3. Get Trust Parameters
-
-Get the latest block height and hash:
-
-```bash
-# Get latest height
-HEIGHT=$(curl -s https://rpc.atomone.apollo-validator.eu/status | jq -r '.result.sync_info.latest_block_height')
-echo "Height: $HEIGHT"
-
-# Get block hash
-HASH=$(curl -s "https://rpc.atomone.apollo-validator.eu/block?height=$HEIGHT" | jq -r '.result.block.header.app_hash')
-echo "Hash: $HASH"
-```
-
-### 4. Configure State Sync
-
-Edit `$HOME/.atomone/config/config.toml`:
-
-```toml
-[state-sync]
-rpc_servers = "https://rpc.atomone.apollo-validator.eu"
-trust_height = <YOUR_HEIGHT>
-trust_hash = "<YOUR_HASH>"
-enable = true
-trust_period = "168h"
-```
-
-### 5. Set Persistent Peers
-
-```bash
-# Get peers from our list
-curl -s https://snapshots.apollo-validator.eu/atomone/peers.md | grep -oP '[a-f0-9]+@[0-9.]+:26656' | tr '\n' ',' | sed 's/,$//'
-
-# Set in config.toml
-PEERS="<peers_from_above>"
-sed -i "s/^persistent_peers = .*/persistent_peers = \"$PEERS\"/" $HOME/.atomone/config/config.toml
-```
-
-### 6. Start Node
-
-```bash
-atomoned start
-```
-
-The node will sync via state sync protocol, which is typically faster than block-by-block sync.
-
-## Verify Sync
-
-```bash
-# Check sync status
-curl -s https://rpc.atomone.apollo-validator.eu/status | jq '.result.sync_info'
-
-# Should show:
-# - "catching_up": false (when fully synced)
-# - "latest_block_height": current height
-```
-
-## Troubleshooting
-
-### "state sync failed"
-
-- Verify trust_height is not too old (within trust_period)
-- Verify trust_hash matches the block at trust_height
-- Check network connectivity to RPC servers
-
-### "could not discover peers"
-
-- Add more persistent_peers
-- Check firewall allows port 26656
-
-### Sync is slow
-
-- Add more RPC servers to rpc_servers (comma-separated)
-- Ensure good network connectivity
-- Check disk I/O performance
-
-## Alternative: Snapshot Restore
-
-If state sync doesn't work, you can use snapshots:
-
-```bash
-# Download latest snapshot
-wget https://snapshots.apollo-validator.eu/atomone/snapshots/latest.tar.zst
-
-# Stop node, extract, restart
 systemctl stop atomoned
-mv $HOME/.atomone/data $HOME/.atomone/data_backup
-mkdir -p $HOME/.atomone/data
-zstd -d latest.tar.zst | tar -C $HOME/.atomone -xf -
-systemctl start atomoned
+SNAP_RPC=https://rpc.atomone.apollo-validator.eu:443
+LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
+BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
+TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
+
+echo $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH
+
+sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
+s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
+s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
+s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
+s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.atomone/config/config.toml
+atomoned tendermint unsafe-reset-all --home /root/.atomone
+wget -O $HOME/.atomone/config/addrbook.json "https://snapshots.apollo-validator.eu/atomone/addrbook.json"
+sudo systemctl restart atomoned && journalctl -fu atomoned -n1000 -o cat
 ```
 
-## Support
+## Snapshot Restore
 
-- GitHub: [Zelivsky/atomone-services](https://github.com/Zelivsky/atomone-services)
-- RPC: https://rpc.atomone.apollo-validator.eu
-- Website: https://apollo-validator.eu
+```bash
+sudo systemctl stop atomoned
+cp $HOME/.atomone/data/priv_validator_state.json $HOME/.atomone/priv_validator_state.json.backup
+rm -rf $HOME/.atomone/data
+curl -o - -L https://snapshots.apollo-validator.eu/atomone/snapshots/latest.tar.zst | zstd -d | tar -x -C $HOME/.atomone
+mv $HOME/.atomone/priv_validator_state.json.backup $HOME/.atomone/data/priv_validator_state.json
+sudo systemctl restart atomoned && journalctl -fu atomoned -n1000 -o cat
+```
+
+## Useful Links
+
+- **RPC:** https://rpc.atomone.apollo-validator.eu
+- **API:** https://api.atomone.apollo-validator.eu
+- **gRPC:** grpc.atomone.apollo-validator.eu:443
+- **Snapshots:** https://snapshots.apollo-validator.eu/atomone/
+- **Peers:** https://snapshots.apollo-validator.eu/atomone/peers.md
+- **Explorer:** https://explorer.apollo-validator.eu

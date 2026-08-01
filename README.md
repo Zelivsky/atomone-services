@@ -4,16 +4,17 @@ Public infrastructure and tools for [AtomOne](https://github.com/atomone-hub/ato
 
 [![AtomOne](https://img.shields.io/badge/Chain-atomone--1-blue)](https://atomone.apollo-validator.eu)
 [![RPC](https://img.shields.io/badge/RPC-rpc.apollo--validator.eu-green)](https://rpc.atomone.apollo-validator.eu)
+[![Snapshots](https://img.shields.io/badge/Snapshots-snapshots.apollo--validator.eu-orange)](https://snapshots.apollo-validator.eu/atomone/snapshot.html)
 
 ## Services
 
 | # | Service | Endpoint | Status |
 |---|---------|----------|--------|
 | 1 | [Public RPC](#public-rpc) | `rpc.atomone.apollo-validator.eu` | 🟢 Active |
-| 2 | [Public API](#public-api) | `api.atomone.apollo-validator.eu` | 🟢 Active |
+| 2 | [Public API](#public-api-rest) | `api.atomone.apollo-validator.eu` | 🟢 Active |
 | 3 | [gRPC](#grpc) | `grpc.atomone.apollo-validator.eu:443` | 🟢 Active |
-| 4 | [Snapshots](#snapshots) | `snapshots.apollo-validator.eu/atomone/` | 🟢 Active |
-| 5 | [State Sync Guide](#state-sync-guide) | [statesync.md](statesync.md) | 🟢 Active |
+| 4 | [Snapshots](#snapshots) | [snapshots.apollo-validator.eu/atomone/snapshot.html](https://snapshots.apollo-validator.eu/atomone/snapshot.html) | 🟢 Active |
+| 5 | [State Sync](#state-sync) | [snapshots.apollo-validator.eu/atomone/statesync.html](https://snapshots.apollo-validator.eu/atomone/statesync.html) | 🟢 Active |
 | 6 | [Peers List](#peers-list) | [peers.md](peers.md) (auto-updated every 6h) | 🟢 Active |
 | 7 | [Installation Guide](#installation-guide) | [guide.md](guide.md) | 🟢 Active |
 
@@ -51,8 +52,11 @@ curl -s https://rpc.atomone.apollo-validator.eu/status | jq -r '.result.sync_inf
 # Get network peers
 curl -s https://rpc.atomone.apollo-validator.eu/net_info | jq -r '.result.n_peers'
 
-# Query account balance
-curl -s "https://rpc.atomone.apollo-validator.eu/abci_query?path=/cosmos.bank.v1beta1.Query/AllBalances&data=YOUR_HEX_ADDRESS" | jq
+# Get block by height
+curl -s "https://rpc.atomone.apollo-validator.eu/block?height=9690000" | jq
+
+# Get validators
+curl -s "https://rpc.atomone.apollo-validator.eu/validators?height=9690000" | jq
 
 # Broadcast transaction
 curl -s "https://rpc.atomone.apollo-validator.eu/broadcast_tx_commit?tx=$(base64 < tx.bin)" | jq
@@ -68,7 +72,7 @@ Denom: uatone
 
 ---
 
-## Public API
+## Public API (REST)
 
 Base URL: `https://api.atomone.apollo-validator.eu`
 
@@ -88,6 +92,9 @@ curl -s https://api.atomone.apollo-validator.eu/cosmos/bank/v1beta1/balances/YOU
 
 # Get staking params
 curl -s https://api.atomone.apollo-validator.eu/cosmos/staking/v1beta1/params | jq
+
+# Get block by height
+curl -s https://api.atomone.apollo-validator.eu/cosmos/base/tendermint/v1beta1/blocks/9690000 | jq
 ```
 
 ---
@@ -106,28 +113,32 @@ grpcurl -plaintext grpc.atomone.apollo-validator.eu:443 list
 
 # Get node info
 grpcurl -plaintext grpc.atomone.apollo-validator.eu:443 cosmos.base.tendermint.v1beta1.Service/GetNodeInfo
+
+# Get block
+grpcurl -plaintext grpc.atomone.apollo-validator.eu:443 cosmos.base.tendermint.v1beta1.Service/GetBlockByHeight -d '{"height": 9690000}'
 ```
 
 ---
 
 ## Snapshots
 
-Page: `https://snapshots.apollo-validator.eu/atomone/`
+Page: [https://snapshots.apollo-validator.eu/atomone/snapshot.html](https://snapshots.apollo-validator.eu/atomone/snapshot.html)
 
-Snapshots are created automatically by the node (every 2000 blocks) and available for fast node synchronization.
+Snapshots are created automatically by the node (every 2000 blocks) and available for fast node synchronization. **The node does not stop during snapshot creation.**
 
 ### Download Latest
 
 ```bash
 # Download snapshot
-wget https://snapshots.apollo-validator.eu/atomone/snapshots/latest.tar.zst
+wget -O atomone-snapshot.tar.zst https://snapshots.apollo-validator.eu/atomone/snapshots/latest.tar.zst
 
 # Restore from snapshot
-systemctl stop atomoned
-mv $HOME/.atomone/data $HOME/.atomone/data_backup
-mkdir -p $HOME/.atomone/data
-zstd -d latest.tar.zst | tar -C $HOME/.atomone -xf -
-systemctl start atomoned
+sudo systemctl stop atomoned
+cp $HOME/.atomone/config/priv_validator_state.json $HOME/priv_validator_state.json.bak
+rm -rf $HOME/.atomone/data/application.db $HOME/.atomone/data/state.db $HOME/.atomone/data/evidence.db
+tar -I zstd -xf atomone-snapshot.tar.zst -C $HOME/.atomone/data/
+cat $HOME/priv_validator_state.json.bak > $HOME/.atomone/config/priv_validator_state.json
+sudo systemctl start atomoned
 ```
 
 ### Snapshot Information
@@ -137,29 +148,19 @@ systemctl start atomoned
 - **Size:** ~7GB
 - **Update frequency:** Every 6 hours
 - **Includes:** application.db, state.db, evidence.db
+- **Node stop required:** No
 
 ---
 
-## State Sync Guide
+## State Sync
 
-Full guide: [statesync.md](statesync.md)
-
-### Quick Setup
-
-```bash
-# Configure state sync in config.toml
-rpc_servers = "https://rpc.atomone.apollo-validator.eu"
-trust_height = <latest_height>
-trust_hash = "<latest_hash>"
-enable = true
-trust_period = "168h"
-```
+Full guide: [statesync.md](statesync.md) | Web: [snapshots.apollo-validator.eu/atomone/statesync.html](https://snapshots.apollo-validator.eu/atomone/statesync.html)
 
 ---
 
 ## Peers List
 
-Auto-updated every 6 hours from `/net_info` RPC.
+Auto-updated every 6 hours from `/net_info` RPC with TCP verification.
 
 Full list: [peers.md](peers.md)
 
@@ -249,7 +250,10 @@ Stake ATONE with Apollo Validator: [Delegate on Mintscan](https://www.mintscan.i
 - [Website](https://apollo-validator.eu)
 - [RPC](https://rpc.atomone.apollo-validator.eu)
 - [API](https://api.atomone.apollo-validator.eu)
-- [Snapshots](https://snapshots.apollo-validator.eu/atomone/)
+- [gRPC](https://grpc.atomone.apollo-validator.eu)
+- [Snapshots](https://snapshots.apollo-validator.eu/atomone/snapshot.html)
+- [State Sync](https://snapshots.apollo-validator.eu/atomone/statesync.html)
+- [Peers](https://snapshots.apollo-validator.eu/atomone/peers.md)
 - [Explorer](https://explorer.apollo-validator.eu)
 
 ---
