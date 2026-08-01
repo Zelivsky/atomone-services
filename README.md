@@ -124,15 +124,24 @@ grpcurl -plaintext grpc.atomone.apollo-validator.eu:443 cosmos.base.tendermint.v
 
 Page: [https://snapshots.apollo-validator.eu/atomone/snapshot.html](https://snapshots.apollo-validator.eu/atomone/snapshot.html)
 
-Snapshots are created automatically by the node (every 2000 blocks) and available for fast node synchronization. **The node does not stop during snapshot creation.**
+| Latest Snapshot | |
+|-----------------|---|
+| **Height** | 9,698,241 |
+| **Size** | 7.5G (zstd) |
+| **Created** | 2026-08-01 12:05 UTC |
+| **Age** | ~1 hour |
+| **Update frequency** | Every 6 hours |
+| **Node stop required** | No |
 
 ### Download Latest
 
 ```bash
-# Download snapshot
 wget -O atomone-snapshot.tar.zst https://snapshots.apollo-validator.eu/atomone/snapshots/latest.tar.zst
+```
 
-# Restore from snapshot
+### Restore from Snapshot
+
+```bash
 sudo systemctl stop atomoned
 cp $HOME/.atomone/config/priv_validator_state.json $HOME/priv_validator_state.json.bak
 rm -rf $HOME/.atomone/data/application.db $HOME/.atomone/data/state.db $HOME/.atomone/data/evidence.db
@@ -140,15 +149,6 @@ tar -I zstd -xf atomone-snapshot.tar.zst -C $HOME/.atomone/data/
 cat $HOME/priv_validator_state.json.bak > $HOME/.atomone/config/priv_validator_state.json
 sudo systemctl start atomoned
 ```
-
-### Snapshot Information
-
-- **Chain:** atomone-1
-- **Compression:** zstd
-- **Size:** ~7GB
-- **Update frequency:** Every 6 hours
-- **Includes:** application.db, state.db, evidence.db
-- **Node stop required:** No
 
 ---
 
