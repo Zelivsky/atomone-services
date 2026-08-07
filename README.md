@@ -17,7 +17,7 @@ Public infrastructure and tools for [AtomOne](https://github.com/atomone-hub/ato
 | 5 | [State Sync](#state-sync) | [snapshots.apollo-validator.eu/atomone/statesync.html](https://snapshots.apollo-validator.eu/atomone/statesync.html) | 🟢 Active |
 | 6 | [Peers List](#peers-list) | [peers.md](peers.md) (auto-updated every 6h) | 🟢 Active |
 | 7 | [Installation Guide](#installation-guide) | [guide.md](guide.md) | 🟢 Active |
-| 8 | [Nakamoto Bonus Bot](#nakamoto-bonus-bot) | [@AtomOneNakamotoBot](https://t.me/AtomOneNakamotoBot) | 🟢 Active |
+| 8 | [Nakamoto Bonus Bot](#nakamoto-bonus-bot) | [@atomone_nakamoto_apollo_bot](https://t.me/atomone_nakamoto_apollo_bot) | 🟢 Active |
 
 ---
 
@@ -258,7 +258,7 @@ Telegram bot for tracking the Nakamoto Bonus and real validator APR.
 - `/proposals` — active governance proposals
 - Alerts when η changes or a tracked validator's APR moves
 
-**Bot:** [@AtomOneNakamotoBot](https://t.me/AtomOneNakamotoBot)
+**Bot:** [@atomone_nakamoto_apollo_bot](https://t.me/atomone_nakamoto_apollo_bot)
 
 **Commands:**
 | Command | Description |
