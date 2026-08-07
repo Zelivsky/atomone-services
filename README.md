@@ -17,6 +17,7 @@ Public infrastructure and tools for [AtomOne](https://github.com/atomone-hub/ato
 | 5 | [State Sync](#state-sync) | [snapshots.apollo-validator.eu/atomone/statesync.html](https://snapshots.apollo-validator.eu/atomone/statesync.html) | 🟢 Active |
 | 6 | [Peers List](#peers-list) | [peers.md](peers.md) (auto-updated every 6h) | 🟢 Active |
 | 7 | [Installation Guide](#installation-guide) | [guide.md](guide.md) | 🟢 Active |
+| 8 | [Nakamoto Bonus Bot](#nakamoto-bonus-bot) | [@AtomOneNakamotoBot](https://t.me/AtomOneNakamotoBot) | 🟢 Active |
 
 ---
 
@@ -126,9 +127,10 @@ Page: [https://snapshots.apollo-validator.eu/atomone/snapshot.html](https://snap
 
 | Latest Snapshot | |
 |-----------------|---|
-| **Height** | 9,710,477 |
-| **Size** | 7.6G (zstd) |
-| **Created** | 2026-08-02T07:48 UTC |
+| **Height** | 9,698,241 |
+| **Size** | 7.5G (zstd) |
+| **Created** | 2026-08-01 12:05 UTC |
+| **Age** | ~1 hour |
 | **Update frequency** | Every 6 hours |
 | **Node stop required** | No |
 
@@ -240,6 +242,38 @@ atomoned start
 ### Delegate
 
 Stake ATONE with Apollo Validator: [Delegate on Mintscan](https://www.mintscan.io/wallet/stake?chain=atomone&src=atonevaloper1hrepv77qv6nh7953jrnqpar4c89yxg5hf8w4qr&type=stake)
+
+---
+
+## Nakamoto Bonus Bot
+
+Telegram bot for tracking the Nakamoto Bonus and real validator APR.
+
+**Features:**
+- `/status` — network health, ATONE & PHOTON economics, Nakamoto Bonus
+- `/apr` — real APR, self-bond and stability for any validator
+- `/calc` — model your delegation: APR impact and expected rewards
+- `/best` — the strongest validators for a delegator
+- `/compare` — validators side by side
+- `/proposals` — active governance proposals
+- Alerts when η changes or a tracked validator's APR moves
+
+**Bot:** [@AtomOneNakamotoBot](https://t.me/AtomOneNakamotoBot)
+
+**Commands:**
+| Command | Description |
+|---------|-------------|
+| `/status` | Network status + Nakamoto Bonus |
+| `/apr <moniker>` | Real APR + self-bond for a validator |
+| `/apr all` | All validators ranked by delegator APR |
+| `/calc <moniker> <amount>` | Reward calculator |
+| `/best [N]` | Top N validators for a delegator |
+| `/compare <A> <B>` | Compare validators |
+| `/add <moniker>` | Track a validator's APR |
+| `/remove <moniker>` | Stop tracking |
+| `/list` | Your tracked validators |
+| `/proposals` | Active governance proposals |
+| `/about` | About this bot |
 
 ---
 
