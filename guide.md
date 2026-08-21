@@ -103,7 +103,7 @@ sed -i \
 ```bash
 # Genesis
 wget -O $HOME/.atomone/config/genesis.json \
-  https://raw.githubusercontent.com/atomone-hub/atomone/main/genesis/genesis.json
+  https://atomone.fra1.digitaloceanspaces.com/genesis.json
 
 # Addrbook (optional, helps connect to peers faster)
 wget -O $HOME/.atomone/config/addrbook.json \
@@ -223,7 +223,7 @@ sudo systemctl enable atomoned
 atomoned tendermint unsafe-reset-all --home $HOME/.atomone
 
 # Download snapshot (optional, faster than syncing from scratch)
-curl -s https://snapshots.apollo-validator.eu/api/atomone/snapshots/latest | jq
+curl -s https://snapshots.apollo-validator.eu/atomone/latest.json | jq
 # Download and restore from snapshot...
 
 # Start node
@@ -529,7 +529,7 @@ sudo journalctl -u atomoned -n 100 --no-pager
 
 ```bash
 # Use snapshot instead
-curl -s https://snapshots.apollo-validator.eu/api/atomone/snapshots/latest | jq
+curl -s https://snapshots.apollo-validator.eu/atomone/latest.json | jq
 
 # Or use state sync (see statesync.md)
 ```
@@ -548,7 +548,7 @@ sudo systemctl restart atomoned
 
 - [GitHub](https://github.com/atomone-hub/atomone)
 - [RPC](https://rpc.atomone.apollo-validator.eu)
-- [API](https://api.atomone.apollo-validator.eu)
+- [API](https://api.atomone.apollo-validator.eu/cosmos/base/tendermint/v1beta1/node_info)
 - [Snapshots](https://snapshots.apollo-validator.eu/atomone/)
 - [Peers](https://snapshots.apollo-validator.eu/atomone/peers.md)
 - [State Sync](https://snapshots.apollo-validator.eu/atomone/statesync.html)
