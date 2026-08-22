@@ -18,6 +18,7 @@ Public infrastructure and tools for [AtomOne](https://github.com/atomone-hub/ato
 | 6 | [Peers List](#peers-list) | [peers.md](peers.md) (auto-updated every 6h) | 🟢 Active |
 | 7 | [Installation Guide](#installation-guide) | [guide.md](guide.md) | 🟢 Active |
 | 8 | [Nakamoto Bonus Bot](#nakamoto-bonus-bot) | [@atomone_nakamoto_apollo_bot](https://t.me/atomone_nakamoto_apollo_bot) | 🟢 Active |
+| 9 | [Nakamoto Bonus Dashboard](#nakamoto-bonus-dashboard) | [snapshots.apollo-validator.eu/atomone/nakamoto.html](https://snapshots.apollo-validator.eu/atomone/nakamoto.html) | 🟢 Active |
 
 ---
 
@@ -273,6 +274,23 @@ Telegram bot for tracking the Nakamoto Bonus and real validator APR.
 | `/list` | Your tracked validators |
 | `/proposals` | Active governance proposals |
 | `/about` | About this bot |
+
+---
+
+## Nakamoto Bonus Dashboard
+
+Page: [https://snapshots.apollo-validator.eu/atomone/nakamoto.html](https://snapshots.apollo-validator.eu/atomone/nakamoto.html)
+
+Live dashboard for AtomOne's Nakamoto Bonus mechanism:
+
+- **Network Overview**: η coefficient, inflation, bonded ratio, validator count
+- **Token Economics**: ATONE & PHOTON prices, supply, market cap
+- **Decentralization Metrics**: Nakamoto coefficient, Gini, top-10/33 stake shares
+- **Validator APR Rankings**: all validators ranked by delegator APR with composite score
+- **Delegation Calculator**: model delegations with APR before/after and projected rewards
+- **How Nakamoto Bonus Works**: formula explanation
+
+Data refreshed hourly. Powered by `nakamoto_engine.py`.
 
 ---
 
