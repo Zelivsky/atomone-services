@@ -90,14 +90,14 @@ tr:hover{background:#1a1a1a}
 <!-- Token Economics -->
 <div class="card">
 <h2>Token Economics</h2>
-<div class="row"><span class="label">ATONE Price</span><span class="value">$0.1396 <span class=green>(+4.4%)</span></span></div>
-<div class="row"><span class="label">PHOTON Price</span><span class="value">$0.022392</span></div>
-<div class="row"><span class="label">Total Supply</span><span class="value">153,124,848 ATONE</span></div>
-<div class="row"><span class="label">Bonded</span><span class="value">60,585,359 ATONE</span></div>
-<div class="row"><span class="label">Market Cap</span><span class="value">$21,382,813</span></div>
+<div class="row"><span class="label">ATONE Price</span><span class="value">$0.1405 <span class=green>(+7.0%)</span></span></div>
+<div class="row"><span class="label">PHOTON Price</span><span class="value">$0.022420</span></div>
+<div class="row"><span class="label">Total Supply</span><span class="value">153,127,625 ATONE</span></div>
+<div class="row"><span class="label">Bonded</span><span class="value">60,586,905 ATONE</span></div>
+<div class="row"><span class="label">Market Cap</span><span class="value">$21,507,234</span></div>
 <div class="row"><span class="label">Network APR (base)</span><span class="value">48.02%</span></div>
-<div class="row"><span class="label">Block Height</span><span class="value">10,023,970</span></div>
-<div class="row"><span class="label">Last Updated</span><span class="value">2026-08-23 09:15 UTC</span></div>
+<div class="row"><span class="label">Block Height</span><span class="value">10,024,415</span></div>
+<div class="row"><span class="label">Last Updated</span><span class="value">2026-08-23 09:58 UTC</span></div>
 </div>
 
 <!-- Decentralization -->
@@ -124,1317 +124,1216 @@ tr:hover{background:#1a1a1a}
 <thead>
 <tr>
 <th data-sort="rank">#</th>
-<th data-sort="delegator_apr" class="right" title="Total APR for delegators after 5% commission. Includes both stake-weighted and Nakamoto Bonus portions.">Delegator APR</th>
 <th data-sort="moniker" title="Validator moniker (name)">Validator</th>
+<th data-sort="delegator_apr" class="right" title="Total APR for delegators after 5% commission. Includes both stake-weighted and Nakamoto Bonus portions.">Delegator APR</th>
 <th data-sort="proportional_apr" class="right" title="APR from the stake-weighted portion: supply × inflation × (1−η) / bonded. Larger validators get more in absolute terms.">Proportional</th>
 <th data-sort="bonus_apr" class="right" title="APR from the Nakamoto Bonus equal portion: supply × inflation × η / (N × stake). Smaller validators get more per token.">Bonus</th>
 <th data-sort="multiplier" class="right" title="Nakamoto Multiplier K_NB = (1−η) + η/(N×x). Values >1 mean the validator benefits from Nakamoto Bonus.">Multiplier</th>
 <th data-sort="share" class="right" title="Validator's share of total bonded stake (x = stake / bonded).">Stake Share</th>
 <th data-sort="stake_aton" class="right" title="Total bonded stake in ATONE.">Stake (ATONE)</th>
 <th data-sort="confidence" class="right" title="APR confidence score (0-100). Higher = more stable APR against additional delegations.">Confidence</th>
-<th data-sort="signal" class="right" title="Delegation signal: Inside 1/3 = top validators controlling 1/3 of stake (red). Outside = between 1/3 and top 20 (blue). Beyond = beyond top 20 (green).">Signal</th>
-<th data-sort="score" class="right" title="Composite score: APR (51%) + Stake size (12%) + Stability (10%). Higher is better for delegators.">Score</th>
+<th data-sort="score" class="right" title="Composite score: APR (51%) + Self-bond (17%) + Stake size (12%) + Stability (10%) + Uptime (10%). Higher is better for delegators.">Score</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td class="right"><span class="badge badge-green">174.28%</span></td>
 <td><strong>KaLaMuC</strong></td>
+<td class="right"><span class="badge badge-green">174.28%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">131.85%</td>
 <td class="right mono">3.820x</td>
 <td class="right mono">0.024%</td>
 <td class="right mono">14,674</td>
 <td class="right"><span class="badge badge-red">0</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">71.5</span></td>
 </tr>
 <tr>
 <td>2</td>
-<td class="right"><span class="badge badge-green">163.72%</span></td>
 <td><strong>Stella 💜🐾</strong></td>
+<td class="right"><span class="badge badge-green">163.72%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">121.30%</td>
 <td class="right mono">3.589x</td>
 <td class="right mono">0.026%</td>
 <td class="right mono">15,951</td>
 <td class="right"><span class="badge badge-red">0</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">71.5</span></td>
 </tr>
 <tr>
 <td>3</td>
-<td class="right"><span class="badge badge-green">115.69%</span></td>
 <td><strong>kgnodes</strong></td>
+<td class="right"><span class="badge badge-green">115.69%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">73.26%</td>
 <td class="right mono">2.536x</td>
 <td class="right mono">0.044%</td>
 <td class="right mono">26,408</td>
 <td class="right"><span class="badge badge-red">42</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">71.5</span></td>
 </tr>
 <tr>
 <td>4</td>
-<td class="right"><span class="badge badge-green">104.41%</span></td>
 <td><strong>AkatSuki</strong></td>
+<td class="right"><span class="badge badge-green">104.41%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">61.98%</td>
 <td class="right mono">2.289x</td>
 <td class="right mono">0.052%</td>
 <td class="right mono">31,215</td>
 <td class="right"><span class="badge badge-yellow">53</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">71.5</span></td>
 </tr>
 <tr>
 <td>5</td>
-<td class="right"><span class="badge badge-green">65.98%</span></td>
 <td><strong>PrimeStake 🌍🛡️</strong></td>
+<td class="right"><span class="badge badge-green">65.98%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">23.56%</td>
 <td class="right mono">1.446x</td>
 <td class="right mono">0.136%</td>
 <td class="right mono">82,128</td>
 <td class="right"><span class="badge badge-green">87</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.1</span></td>
 </tr>
 <tr>
 <td>6</td>
-<td class="right"><span class="badge badge-green">64.55%</span></td>
 <td><strong>Winnode</strong></td>
+<td class="right"><span class="badge badge-green">64.55%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">22.12%</td>
 <td class="right mono">1.415x</td>
 <td class="right mono">0.144%</td>
 <td class="right mono">87,460</td>
 <td class="right"><span class="badge badge-green">88</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.5</span></td>
 </tr>
 <tr>
 <td>7</td>
-<td class="right"><span class="badge badge-green">63.51%</span></td>
 <td><strong>MictoNode</strong></td>
+<td class="right"><span class="badge badge-green">63.51%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">21.08%</td>
 <td class="right mono">1.392x</td>
 <td class="right mono">0.151%</td>
 <td class="right mono">91,776</td>
 <td class="right"><span class="badge badge-green">89</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.0</span></td>
 </tr>
 <tr>
 <td>8</td>
-<td class="right"><span class="badge badge-green">59.60%</span></td>
 <td><strong>🐾TRACE™</strong></td>
+<td class="right"><span class="badge badge-green">59.60%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">17.17%</td>
 <td class="right mono">1.306x</td>
 <td class="right mono">0.186%</td>
 <td class="right mono">112,688</td>
 <td class="right"><span class="badge badge-green">92</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.3</span></td>
 </tr>
 <tr>
 <td>9</td>
-<td class="right"><span class="badge badge-green">59.31%</span></td>
 <td><strong>CoinHunters</strong></td>
+<td class="right"><span class="badge badge-green">59.31%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">16.88%</td>
 <td class="right mono">1.300x</td>
 <td class="right mono">0.189%</td>
 <td class="right mono">114,590</td>
 <td class="right"><span class="badge badge-green">92</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.2</span></td>
 </tr>
 <tr>
 <td>10</td>
-<td class="right"><span class="badge badge-green">59.25%</span></td>
 <td><strong>dnsarz</strong></td>
+<td class="right"><span class="badge badge-green">59.25%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">16.82%</td>
 <td class="right mono">1.299x</td>
 <td class="right mono">0.190%</td>
 <td class="right mono">115,010</td>
 <td class="right"><span class="badge badge-green">92</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.1</span></td>
 </tr>
 <tr>
 <td>11</td>
-<td class="right"><span class="badge badge-green">58.75%</span></td>
 <td><strong>Fluxen | Indonode</strong></td>
+<td class="right"><span class="badge badge-green">58.75%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">16.33%</td>
 <td class="right mono">1.288x</td>
 <td class="right mono">0.196%</td>
-<td class="right mono">118,505</td>
+<td class="right mono">118,507</td>
 <td class="right"><span class="badge badge-green">92</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">57.9</span></td>
 </tr>
 <tr>
 <td>12</td>
-<td class="right"><span class="badge badge-green">58.46%</span></td>
 <td><strong>SECARD</strong></td>
+<td class="right"><span class="badge badge-green">58.46%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">16.04%</td>
 <td class="right mono">1.282x</td>
 <td class="right mono">0.199%</td>
 <td class="right mono">120,632</td>
 <td class="right"><span class="badge badge-green">93</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">57.8</span></td>
 </tr>
 <tr>
 <td>13</td>
-<td class="right"><span class="badge badge-green">58.26%</span></td>
 <td><strong>Tanjira</strong></td>
+<td class="right"><span class="badge badge-green">58.26%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">15.84%</td>
 <td class="right mono">1.277x</td>
 <td class="right mono">0.202%</td>
 <td class="right mono">122,177</td>
 <td class="right"><span class="badge badge-green">93</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.0</span></td>
 </tr>
 <tr>
 <td>14</td>
-<td class="right"><span class="badge badge-green">58.26%</span></td>
 <td><strong>NodeRuneR</strong></td>
+<td class="right"><span class="badge badge-green">58.26%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">15.83%</td>
 <td class="right mono">1.277x</td>
 <td class="right mono">0.202%</td>
 <td class="right mono">122,222</td>
 <td class="right"><span class="badge badge-green">93</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.0</span></td>
 </tr>
 <tr>
 <td>15</td>
-<td class="right"><span class="badge badge-green">57.16%</span></td>
 <td><strong>owlstake</strong></td>
+<td class="right"><span class="badge badge-green">57.16%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">14.73%</td>
 <td class="right mono">1.253x</td>
 <td class="right mono">0.217%</td>
 <td class="right mono">131,345</td>
 <td class="right"><span class="badge badge-green">94</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.5</span></td>
 </tr>
 <tr>
 <td>16</td>
-<td class="right"><span class="badge badge-green">57.06%</span></td>
 <td><strong>👋 79anvi 🍀</strong></td>
+<td class="right"><span class="badge badge-green">57.06%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">14.64%</td>
 <td class="right mono">1.251x</td>
 <td class="right mono">0.218%</td>
 <td class="right mono">132,189</td>
 <td class="right"><span class="badge badge-green">94</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>17</td>
-<td class="right"><span class="badge badge-green">57.00%</span></td>
 <td><strong>CryptoDungeon</strong></td>
+<td class="right"><span class="badge badge-green">57.00%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">14.57%</td>
 <td class="right mono">1.249x</td>
 <td class="right mono">0.219%</td>
 <td class="right mono">132,746</td>
 <td class="right"><span class="badge badge-green">94</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>18</td>
-<td class="right"><span class="badge badge-green">56.04%</span></td>
 <td><strong>🏆OshVanK🏆</strong></td>
+<td class="right"><span class="badge badge-green">56.04%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">13.62%</td>
 <td class="right mono">1.228x</td>
 <td class="right mono">0.235%</td>
 <td class="right mono">142,097</td>
 <td class="right"><span class="badge badge-green">94</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.9</span></td>
 </tr>
 <tr>
 <td>19</td>
-<td class="right"><span class="badge badge-green">56.02%</span></td>
 <td><strong>linkednode</strong></td>
+<td class="right"><span class="badge badge-green">56.02%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">13.60%</td>
 <td class="right mono">1.228x</td>
 <td class="right mono">0.235%</td>
 <td class="right mono">142,295</td>
 <td class="right"><span class="badge badge-green">94</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.9</span></td>
 </tr>
 <tr>
 <td>20</td>
-<td class="right"><span class="badge badge-green">55.83%</span></td>
 <td><strong>Shazoes</strong></td>
+<td class="right"><span class="badge badge-green">55.83%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">13.41%</td>
 <td class="right mono">1.224x</td>
 <td class="right mono">0.238%</td>
 <td class="right mono">144,301</td>
 <td class="right"><span class="badge badge-green">94</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.8</span></td>
 </tr>
 <tr>
 <td>21</td>
-<td class="right"><span class="badge badge-green">55.68%</span></td>
 <td><strong>Revonode</strong></td>
+<td class="right"><span class="badge badge-green">55.68%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">13.25%</td>
 <td class="right mono">1.221x</td>
 <td class="right mono">0.241%</td>
 <td class="right mono">145,967</td>
 <td class="right"><span class="badge badge-green">95</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.8</span></td>
 </tr>
 <tr>
 <td>22</td>
-<td class="right"><span class="badge badge-green">55.51%</span></td>
 <td><strong>01node</strong></td>
+<td class="right"><span class="badge badge-green">55.51%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">13.08%</td>
 <td class="right mono">1.217x</td>
 <td class="right mono">0.244%</td>
 <td class="right mono">147,908</td>
 <td class="right"><span class="badge badge-green">95</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.7</span></td>
 </tr>
 <tr>
 <td>23</td>
-<td class="right"><span class="badge badge-green">54.96%</span></td>
 <td><strong>MIPEnode</strong></td>
+<td class="right"><span class="badge badge-green">54.96%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">12.53%</td>
 <td class="right mono">1.205x</td>
 <td class="right mono">0.255%</td>
 <td class="right mono">154,420</td>
 <td class="right"><span class="badge badge-green">95</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.4</span></td>
 </tr>
 <tr>
 <td>24</td>
-<td class="right"><span class="badge badge-green">54.06%</span></td>
 <td><strong>BonyNode💚</strong></td>
+<td class="right"><span class="badge badge-green">54.06%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">11.64%</td>
 <td class="right mono">1.185x</td>
 <td class="right mono">0.274%</td>
 <td class="right mono">166,262</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.0</span></td>
 </tr>
 <tr>
 <td>25</td>
-<td class="right"><span class="badge badge-green">54.02%</span></td>
 <td><strong>StakeUp</strong></td>
+<td class="right"><span class="badge badge-green">54.02%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">11.59%</td>
 <td class="right mono">1.184x</td>
-<td class="right mono">0.276%</td>
+<td class="right mono">0.275%</td>
 <td class="right mono">166,916</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.0</span></td>
 </tr>
 <tr>
 <td>26</td>
-<td class="right"><span class="badge badge-green">53.90%</span></td>
 <td><strong>sychonix</strong></td>
+<td class="right"><span class="badge badge-green">53.90%</span></td>
 <td class="right mono">42.43%</td>
-<td class="right mono">11.47%</td>
+<td class="right mono">11.48%</td>
 <td class="right mono">1.182x</td>
 <td class="right mono">0.278%</td>
 <td class="right mono">168,604</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.9</span></td>
 </tr>
 <tr>
 <td>27</td>
-<td class="right"><span class="badge badge-green">53.87%</span></td>
 <td><strong>HazenNetworkSolutions</strong></td>
+<td class="right"><span class="badge badge-green">53.87%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">11.45%</td>
 <td class="right mono">1.181x</td>
 <td class="right mono">0.279%</td>
 <td class="right mono">169,028</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.9</span></td>
 </tr>
 <tr>
 <td>28</td>
-<td class="right"><span class="badge badge-green">53.84%</span></td>
 <td><strong>Kynraze</strong></td>
+<td class="right"><span class="badge badge-green">53.84%</span></td>
 <td class="right mono">42.43%</td>
-<td class="right mono">11.41%</td>
+<td class="right mono">11.42%</td>
 <td class="right mono">1.180x</td>
 <td class="right mono">0.280%</td>
 <td class="right mono">169,492</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.9</span></td>
 </tr>
 <tr>
 <td>29</td>
-<td class="right"><span class="badge badge-green">53.65%</span></td>
 <td><strong>CroutonDigital</strong></td>
+<td class="right"><span class="badge badge-green">53.65%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">11.22%</td>
 <td class="right mono">1.176x</td>
 <td class="right mono">0.285%</td>
 <td class="right mono">172,427</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.8</span></td>
 </tr>
 <tr>
 <td>30</td>
-<td class="right"><span class="badge badge-green">53.64%</span></td>
 <td><strong>Vinjan.Inc | RESTAKE</strong></td>
+<td class="right"><span class="badge badge-green">53.64%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">11.21%</td>
 <td class="right mono">1.176x</td>
 <td class="right mono">0.285%</td>
 <td class="right mono">172,542</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.8</span></td>
 </tr>
 <tr>
 <td>31</td>
-<td class="right"><span class="badge badge-green">53.50%</span></td>
 <td><strong>ruangnode</strong></td>
+<td class="right"><span class="badge badge-green">53.50%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">11.08%</td>
 <td class="right mono">1.173x</td>
 <td class="right mono">0.288%</td>
 <td class="right mono">174,668</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.7</span></td>
 </tr>
 <tr>
 <td>32</td>
-<td class="right"><span class="badge badge-green">53.50%</span></td>
 <td><strong>AlxVoy ⚡ ANODE.TEAM</strong></td>
+<td class="right"><span class="badge badge-green">53.50%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">11.07%</td>
 <td class="right mono">1.173x</td>
-<td class="right mono">0.289%</td>
+<td class="right mono">0.288%</td>
 <td class="right mono">174,792</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.7</span></td>
 </tr>
 <tr>
 <td>33</td>
-<td class="right"><span class="badge badge-green">53.23%</span></td>
 <td><strong>🔥STAVR🔥 REStake ON✅</strong></td>
+<td class="right"><span class="badge badge-green">53.23%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">10.80%</td>
 <td class="right mono">1.167x</td>
 <td class="right mono">0.296%</td>
 <td class="right mono">179,162</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.6</span></td>
 </tr>
 <tr>
 <td>34</td>
-<td class="right"><span class="badge badge-green">53.11%</span></td>
 <td><strong>CrowdControl</strong></td>
+<td class="right"><span class="badge badge-green">53.11%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">10.69%</td>
 <td class="right mono">1.164x</td>
 <td class="right mono">0.299%</td>
 <td class="right mono">181,061</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.5</span></td>
 </tr>
 <tr>
 <td>35</td>
-<td class="right"><span class="badge badge-green">52.88%</span></td>
 <td><strong>ITRocket</strong></td>
+<td class="right"><span class="badge badge-green">52.88%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">10.45%</td>
 <td class="right mono">1.159x</td>
 <td class="right mono">0.306%</td>
 <td class="right mono">185,137</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.9</span></td>
 </tr>
 <tr>
 <td>36</td>
-<td class="right"><span class="badge badge-green">52.72%</span></td>
 <td><strong>cunum</strong></td>
+<td class="right"><span class="badge badge-green">52.72%</span></td>
 <td class="right mono">42.43%</td>
-<td class="right mono">10.29%</td>
+<td class="right mono">10.30%</td>
 <td class="right mono">1.156x</td>
 <td class="right mono">0.310%</td>
 <td class="right mono">187,931</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.8</span></td>
 </tr>
 <tr>
 <td>37</td>
-<td class="right"><span class="badge badge-green">52.60%</span></td>
 <td><strong>equinoxDAO</strong></td>
+<td class="right"><span class="badge badge-green">52.60%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">10.17%</td>
 <td class="right mono">1.153x</td>
 <td class="right mono">0.314%</td>
 <td class="right mono">190,234</td>
 <td class="right"><span class="badge badge-green">96</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.7</span></td>
 </tr>
 <tr>
 <td>38</td>
-<td class="right"><span class="badge badge-green">52.34%</span></td>
 <td><strong>bitszn | valopers.com</strong></td>
+<td class="right"><span class="badge badge-green">52.34%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.91%</td>
 <td class="right mono">1.147x</td>
 <td class="right mono">0.322%</td>
 <td class="right mono">195,162</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.6</span></td>
 </tr>
 <tr>
 <td>39</td>
-<td class="right"><span class="badge badge-green">52.22%</span></td>
 <td><strong>KonsorTech</strong></td>
+<td class="right"><span class="badge badge-green">52.22%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.79%</td>
 <td class="right mono">1.145x</td>
 <td class="right mono">0.326%</td>
 <td class="right mono">197,563</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.5</span></td>
 </tr>
 <tr>
 <td>40</td>
-<td class="right"><span class="badge badge-green">52.10%</span></td>
 <td><strong>Foxinodes</strong></td>
+<td class="right"><span class="badge badge-green">52.10%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.67%</td>
 <td class="right mono">1.142x</td>
 <td class="right mono">0.330%</td>
 <td class="right mono">200,035</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.5</span></td>
 </tr>
 <tr>
 <td>41</td>
-<td class="right"><span class="badge badge-green">52.04%</span></td>
 <td><strong>UTSA</strong></td>
+<td class="right"><span class="badge badge-green">52.04%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.62%</td>
 <td class="right mono">1.141x</td>
 <td class="right mono">0.332%</td>
 <td class="right mono">201,202</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>42</td>
-<td class="right"><span class="badge badge-green">52.04%</span></td>
 <td><strong>LuckyStar</strong></td>
+<td class="right"><span class="badge badge-green">52.04%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.62%</td>
 <td class="right mono">1.141x</td>
 <td class="right mono">0.332%</td>
 <td class="right mono">201,218</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>43</td>
-<td class="right"><span class="badge badge-green">51.97%</span></td>
 <td><strong>🔥 BIERFORGE ⚒ 🔥 REStake</strong></td>
+<td class="right"><span class="badge badge-green">51.97%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.54%</td>
 <td class="right mono">1.139x</td>
 <td class="right mono">0.335%</td>
-<td class="right mono">202,736</td>
+<td class="right mono">202,741</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>44</td>
-<td class="right"><span class="badge badge-green">51.86%</span></td>
 <td><strong>TaxiStake</strong></td>
+<td class="right"><span class="badge badge-green">51.86%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.43%</td>
 <td class="right mono">1.137x</td>
 <td class="right mono">0.338%</td>
 <td class="right mono">205,068</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>45</td>
-<td class="right"><span class="badge badge-green">51.79%</span></td>
 <td><strong>Xilodyne</strong></td>
+<td class="right"><span class="badge badge-green">51.79%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.36%</td>
 <td class="right mono">1.135x</td>
 <td class="right mono">0.341%</td>
 <td class="right mono">206,689</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.3</span></td>
 </tr>
 <tr>
 <td>46</td>
-<td class="right"><span class="badge badge-green">51.68%</span></td>
 <td><strong>VALIDARIOS</strong></td>
+<td class="right"><span class="badge badge-green">51.68%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.25%</td>
 <td class="right mono">1.133x</td>
 <td class="right mono">0.345%</td>
 <td class="right mono">209,114</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.3</span></td>
 </tr>
 <tr>
 <td>47</td>
-<td class="right"><span class="badge badge-green">51.67%</span></td>
 <td><strong>IAmScRay</strong></td>
+<td class="right"><span class="badge badge-green">51.67%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.25%</td>
 <td class="right mono">1.133x</td>
 <td class="right mono">0.345%</td>
 <td class="right mono">209,259</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.3</span></td>
 </tr>
 <tr>
 <td>48</td>
-<td class="right"><span class="badge badge-green">51.66%</span></td>
 <td><strong>NODEJUMPER</strong></td>
+<td class="right"><span class="badge badge-green">51.66%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">9.23%</td>
 <td class="right mono">1.132x</td>
 <td class="right mono">0.346%</td>
 <td class="right mono">209,529</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">60.3</span></td>
 </tr>
 <tr>
 <td>49</td>
-<td class="right"><span class="badge badge-green">51.06%</span></td>
 <td><strong>SyaNodes</strong></td>
+<td class="right"><span class="badge badge-green">51.06%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">8.63%</td>
 <td class="right mono">1.119x</td>
 <td class="right mono">0.370%</td>
 <td class="right mono">224,166</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.9</span></td>
 </tr>
 <tr>
 <td>50</td>
-<td class="right"><span class="badge badge-green">50.85%</span></td>
 <td><strong>PathrockNetwork</strong></td>
+<td class="right"><span class="badge badge-green">50.85%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">8.43%</td>
 <td class="right mono">1.115x</td>
 <td class="right mono">0.379%</td>
 <td class="right mono">229,589</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.8</span></td>
 </tr>
 <tr>
 <td>51</td>
-<td class="right"><span class="badge badge-green">50.73%</span></td>
 <td><strong>silent</strong></td>
+<td class="right"><span class="badge badge-green">50.73%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">8.30%</td>
 <td class="right mono">1.112x</td>
 <td class="right mono">0.385%</td>
-<td class="right mono">233,131</td>
+<td class="right mono">233,132</td>
 <td class="right"><span class="badge badge-green">97</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.8</span></td>
 </tr>
 <tr>
 <td>52</td>
-<td class="right"><span class="badge badge-green">50.60%</span></td>
 <td><strong>Tecnodes</strong></td>
+<td class="right"><span class="badge badge-green">50.60%</span></td>
 <td class="right mono">42.43%</td>
-<td class="right mono">8.17%</td>
+<td class="right mono">8.18%</td>
 <td class="right mono">1.109x</td>
 <td class="right mono">0.391%</td>
 <td class="right mono">236,667</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.7</span></td>
 </tr>
 <tr>
 <td>53</td>
-<td class="right"><span class="badge badge-green">50.47%</span></td>
 <td><strong>Apollo</strong></td>
+<td class="right"><span class="badge badge-green">50.47%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">8.04%</td>
 <td class="right mono">1.106x</td>
 <td class="right mono">0.397%</td>
 <td class="right mono">240,612</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.6</span></td>
 </tr>
 <tr>
 <td>54</td>
-<td class="right"><span class="badge badge-green">50.13%</span></td>
 <td><strong>NexuSecurus</strong></td>
+<td class="right"><span class="badge badge-green">50.13%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">7.70%</td>
 <td class="right mono">1.099x</td>
 <td class="right mono">0.415%</td>
 <td class="right mono">251,221</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.5</span></td>
 </tr>
 <tr>
 <td>55</td>
-<td class="right"><span class="badge badge-green">49.83%</span></td>
 <td><strong>StakerHouse</strong></td>
+<td class="right"><span class="badge badge-green">49.83%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">7.40%</td>
 <td class="right mono">1.092x</td>
 <td class="right mono">0.431%</td>
 <td class="right mono">261,314</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.3</span></td>
 </tr>
 <tr>
 <td>56</td>
-<td class="right"><span class="badge badge-green">49.77%</span></td>
 <td><strong>Citizen Web3</strong></td>
+<td class="right"><span class="badge badge-green">49.77%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">7.35%</td>
 <td class="right mono">1.091x</td>
 <td class="right mono">0.435%</td>
 <td class="right mono">263,321</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.3</span></td>
 </tr>
 <tr>
 <td>57</td>
-<td class="right"><span class="badge badge-green">49.69%</span></td>
 <td><strong>Roomit</strong></td>
+<td class="right"><span class="badge badge-green">49.69%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">7.26%</td>
 <td class="right mono">1.089x</td>
 <td class="right mono">0.440%</td>
-<td class="right mono">266,498</td>
+<td class="right mono">266,500</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.2</span></td>
 </tr>
 <tr>
 <td>58</td>
-<td class="right"><span class="badge badge-green">49.61%</span></td>
 <td><strong>plantree</strong></td>
+<td class="right"><span class="badge badge-green">49.61%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">7.18%</td>
 <td class="right mono">1.087x</td>
 <td class="right mono">0.445%</td>
 <td class="right mono">269,414</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.2</span></td>
 </tr>
 <tr>
 <td>59</td>
-<td class="right"><span class="badge badge-green">49.52%</span></td>
 <td><strong>CoreStake</strong></td>
+<td class="right"><span class="badge badge-green">49.52%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">7.09%</td>
 <td class="right mono">1.085x</td>
 <td class="right mono">0.450%</td>
 <td class="right mono">272,851</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">59.1</span></td>
 </tr>
 <tr>
 <td>60</td>
-<td class="right"><span class="badge badge-green">49.10%</span></td>
 <td><strong>ChainTools</strong></td>
+<td class="right"><span class="badge badge-green">49.10%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">6.67%</td>
 <td class="right mono">1.076x</td>
-<td class="right mono">0.479%</td>
+<td class="right mono">0.478%</td>
 <td class="right mono">289,903</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.9</span></td>
 </tr>
 <tr>
 <td>61</td>
-<td class="right"><span class="badge badge-green">48.96%</span></td>
 <td><strong>[NODERS]</strong></td>
+<td class="right"><span class="badge badge-green">48.96%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">6.53%</td>
 <td class="right mono">1.073x</td>
 <td class="right mono">0.489%</td>
 <td class="right mono">296,321</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.8</span></td>
 </tr>
 <tr>
 <td>62</td>
-<td class="right"><span class="badge badge-green">48.89%</span></td>
 <td><strong>WeStaking</strong></td>
+<td class="right"><span class="badge badge-green">48.89%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">6.46%</td>
 <td class="right mono">1.072x</td>
 <td class="right mono">0.494%</td>
 <td class="right mono">299,542</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-red">58.8</span></td>
 </tr>
 <tr>
 <td>63</td>
-<td class="right"><span class="badge badge-green">48.81%</span></td>
 <td><strong>StakeLab.zone</strong></td>
+<td class="right"><span class="badge badge-green">48.81%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">6.38%</td>
 <td class="right mono">1.070x</td>
 <td class="right mono">0.500%</td>
 <td class="right mono">303,150</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">62.0</span></td>
 </tr>
 <tr>
 <td>64</td>
-<td class="right"><span class="badge badge-green">48.54%</span></td>
 <td><strong>BZE Community</strong></td>
+<td class="right"><span class="badge badge-green">48.54%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">6.11%</td>
 <td class="right mono">1.064x</td>
 <td class="right mono">0.522%</td>
 <td class="right mono">316,468</td>
 <td class="right"><span class="badge badge-green">98</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.9</span></td>
 </tr>
 <tr>
 <td>65</td>
-<td class="right"><span class="badge badge-green">47.96%</span></td>
 <td><strong>Nodeist 🛡️ Slash Protected</strong></td>
+<td class="right"><span class="badge badge-green">47.96%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">5.53%</td>
 <td class="right mono">1.051x</td>
 <td class="right mono">0.578%</td>
 <td class="right mono">349,902</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.6</span></td>
 </tr>
 <tr>
 <td>66</td>
-<td class="right"><span class="badge badge-green">47.88%</span></td>
 <td><strong>NyanCat</strong></td>
+<td class="right"><span class="badge badge-green">47.88%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">5.45%</td>
 <td class="right mono">1.049x</td>
 <td class="right mono">0.586%</td>
 <td class="right mono">355,064</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.5</span></td>
 </tr>
 <tr>
 <td>67</td>
-<td class="right"><span class="badge badge-green">47.81%</span></td>
 <td><strong>AVIAONE.com 🟢</strong></td>
+<td class="right"><span class="badge badge-green">47.81%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">5.38%</td>
 <td class="right mono">1.048x</td>
 <td class="right mono">0.593%</td>
 <td class="right mono">359,562</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.5</span></td>
 </tr>
 <tr>
 <td>68</td>
-<td class="right"><span class="badge badge-green">47.66%</span></td>
 <td><strong>Cogwheel ⚙️</strong></td>
+<td class="right"><span class="badge badge-green">47.66%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">5.24%</td>
 <td class="right mono">1.045x</td>
 <td class="right mono">0.610%</td>
 <td class="right mono">369,429</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.4</span></td>
 </tr>
 <tr>
 <td>69</td>
-<td class="right"><span class="badge badge-green">47.28%</span></td>
 <td><strong>NosNode🔮</strong></td>
+<td class="right"><span class="badge badge-green">47.28%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">4.86%</td>
 <td class="right mono">1.036x</td>
-<td class="right mono">0.658%</td>
+<td class="right mono">0.657%</td>
 <td class="right mono">398,353</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.2</span></td>
 </tr>
 <tr>
 <td>70</td>
-<td class="right"><span class="badge badge-green">47.24%</span></td>
 <td><strong>Regenerator | Green Validator 🌱</strong></td>
+<td class="right"><span class="badge badge-green">47.24%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">4.81%</td>
 <td class="right mono">1.036x</td>
 <td class="right mono">0.663%</td>
 <td class="right mono">401,850</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.1</span></td>
 </tr>
 <tr>
 <td>71</td>
-<td class="right"><span class="badge badge-green">47.12%</span></td>
 <td><strong>Inter Blockchain Services</strong></td>
+<td class="right"><span class="badge badge-green">47.12%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">4.69%</td>
 <td class="right mono">1.033x</td>
 <td class="right mono">0.680%</td>
 <td class="right mono">412,239</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.1</span></td>
 </tr>
 <tr>
 <td>72</td>
-<td class="right"><span class="badge badge-green">46.97%</span></td>
 <td><strong>Ubik Capital</strong></td>
+<td class="right"><span class="badge badge-green">46.97%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">4.55%</td>
 <td class="right mono">1.030x</td>
 <td class="right mono">0.702%</td>
-<td class="right mono">425,602</td>
+<td class="right mono">425,604</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">62.6</span></td>
 </tr>
 <tr>
 <td>73</td>
-<td class="right"><span class="badge badge-green">46.55%</span></td>
 <td><strong>Umbrella ☔</strong></td>
+<td class="right"><span class="badge badge-green">46.55%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">4.12%</td>
 <td class="right mono">1.020x</td>
 <td class="right mono">0.775%</td>
 <td class="right mono">469,344</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">62.4</span></td>
 </tr>
 <tr>
 <td>74</td>
-<td class="right"><span class="badge badge-green">46.45%</span></td>
 <td><strong>SolidarityNode</strong></td>
+<td class="right"><span class="badge badge-green">46.44%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">4.02%</td>
 <td class="right mono">1.018x</td>
 <td class="right mono">0.795%</td>
 <td class="right mono">481,443</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">62.3</span></td>
 </tr>
 <tr>
 <td>75</td>
-<td class="right"><span class="badge badge-green">46.22%</span></td>
 <td><strong>ProMEX Hub</strong></td>
+<td class="right"><span class="badge badge-green">46.22%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">3.79%</td>
 <td class="right mono">1.013x</td>
 <td class="right mono">0.842%</td>
 <td class="right mono">510,169</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">62.2</span></td>
 </tr>
 <tr>
 <td>76</td>
-<td class="right"><span class="badge badge-green">46.10%</span></td>
 <td><strong>Kleomedes</strong></td>
+<td class="right"><span class="badge badge-green">46.10%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">3.67%</td>
 <td class="right mono">1.010x</td>
 <td class="right mono">0.870%</td>
 <td class="right mono">527,269</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">62.1</span></td>
 </tr>
 <tr>
 <td>77</td>
-<td class="right"><span class="badge badge-green">46.05%</span></td>
 <td><strong>Crypto Plant</strong></td>
+<td class="right"><span class="badge badge-green">46.05%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">3.63%</td>
 <td class="right mono">1.009x</td>
 <td class="right mono">0.881%</td>
 <td class="right mono">533,558</td>
 <td class="right"><span class="badge badge-green">99</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">62.1</span></td>
 </tr>
 <tr>
 <td>78</td>
-<td class="right"><span class="badge badge-green">45.09%</span></td>
 <td><strong> Silk Nodes</strong></td>
+<td class="right"><span class="badge badge-green">45.09%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">2.66%</td>
 <td class="right mono">0.988x</td>
 <td class="right mono">1.200%</td>
 <td class="right mono">727,104</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.5</span></td>
 </tr>
 <tr>
 <td>79</td>
-<td class="right"><span class="badge badge-green">45.03%</span></td>
 <td><strong>Crosnest</strong></td>
+<td class="right"><span class="badge badge-green">45.03%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">2.61%</td>
 <td class="right mono">0.987x</td>
 <td class="right mono">1.225%</td>
 <td class="right mono">742,230</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.5</span></td>
 </tr>
 <tr>
 <td>80</td>
-<td class="right"><span class="badge badge-green">44.85%</span></td>
 <td><strong>Oneiric Stake</strong></td>
+<td class="right"><span class="badge badge-green">44.85%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">2.42%</td>
 <td class="right mono">0.983x</td>
 <td class="right mono">1.317%</td>
 <td class="right mono">797,962</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-green">Beyond top 20</span></td>
 <td class="right"><span class="badge badge-yellow">61.4</span></td>
 </tr>
 <tr>
 <td>81</td>
-<td class="right"><span class="badge badge-green">44.82%</span></td>
 <td><strong>PRO Delegators</strong></td>
+<td class="right"><span class="badge badge-green">44.82%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">2.40%</td>
 <td class="right mono">0.983x</td>
 <td class="right mono">1.333%</td>
 <td class="right mono">807,740</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">61.3</span></td>
 </tr>
 <tr>
 <td>82</td>
-<td class="right"><span class="badge badge-green">44.47%</span></td>
 <td><strong>GATA HUB</strong></td>
+<td class="right"><span class="badge badge-green">44.47%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">2.04%</td>
 <td class="right mono">0.975x</td>
 <td class="right mono">1.563%</td>
 <td class="right mono">946,694</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">61.1</span></td>
 </tr>
 <tr>
 <td>83</td>
-<td class="right"><span class="badge badge-green">44.24%</span></td>
 <td><strong>Chiter in Cosmos ⚛</strong></td>
+<td class="right"><span class="badge badge-green">44.24%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.82%</td>
 <td class="right mono">0.970x</td>
 <td class="right mono">1.758%</td>
-<td class="right mono">1,065,167</td>
+<td class="right mono">1,065,168</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">61.0</span></td>
 </tr>
 <tr>
 <td>84</td>
-<td class="right"><span class="badge badge-green">44.08%</span></td>
 <td><strong>NodesHub</strong></td>
+<td class="right"><span class="badge badge-green">44.08%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.66%</td>
 <td class="right mono">0.966x</td>
 <td class="right mono">1.927%</td>
 <td class="right mono">1,167,320</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.9</span></td>
 </tr>
 <tr>
 <td>85</td>
-<td class="right"><span class="badge badge-green">44.01%</span></td>
 <td><strong>Onbloc Node</strong></td>
+<td class="right"><span class="badge badge-green">44.01%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.58%</td>
 <td class="right mono">0.965x</td>
 <td class="right mono">2.019%</td>
 <td class="right mono">1,222,992</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.8</span></td>
 </tr>
 <tr>
 <td>86</td>
-<td class="right"><span class="badge badge-green">43.97%</span></td>
 <td><strong>ECO Stake 🌱 | REStake.app</strong></td>
+<td class="right"><span class="badge badge-green">43.97%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.54%</td>
 <td class="right mono">0.964x</td>
 <td class="right mono">2.075%</td>
 <td class="right mono">1,256,913</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.8</span></td>
 </tr>
 <tr>
 <td>87</td>
-<td class="right"><span class="badge badge-green">43.89%</span></td>
 <td><strong>Makeone</strong></td>
+<td class="right"><span class="badge badge-green">43.89%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.47%</td>
 <td class="right mono">0.962x</td>
 <td class="right mono">2.178%</td>
 <td class="right mono">1,319,726</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.7</span></td>
 </tr>
 <tr>
 <td>88</td>
-<td class="right"><span class="badge badge-green">43.66%</span></td>
 <td><strong>Forbole</strong></td>
+<td class="right"><span class="badge badge-green">43.66%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.23%</td>
 <td class="right mono">0.957x</td>
 <td class="right mono">2.593%</td>
 <td class="right mono">1,571,238</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.6</span></td>
 </tr>
 <tr>
 <td>89</td>
-<td class="right"><span class="badge badge-green">43.53%</span></td>
 <td><strong>POSTHUMAN 🧬 StakeDrop</strong></td>
+<td class="right"><span class="badge badge-green">43.53%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.11%</td>
 <td class="right mono">0.954x</td>
 <td class="right mono">2.882%</td>
-<td class="right mono">1,745,845</td>
+<td class="right mono">1,745,851</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.5</span></td>
 </tr>
 <tr>
 <td>90</td>
-<td class="right"><span class="badge badge-green">43.48%</span></td>
 <td><strong>Simply Staking</strong></td>
+<td class="right"><span class="badge badge-green">43.48%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.05%</td>
 <td class="right mono">0.953x</td>
 <td class="right mono">3.032%</td>
-<td class="right mono">1,836,706</td>
+<td class="right mono">1,836,835</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.5</span></td>
 </tr>
 <tr>
 <td>91</td>
-<td class="right"><span class="badge badge-green">43.47%</span></td>
 <td><strong>CloudByte</strong></td>
+<td class="right"><span class="badge badge-green">43.47%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.05%</td>
 <td class="right mono">0.953x</td>
 <td class="right mono">3.052%</td>
 <td class="right mono">1,849,223</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.5</span></td>
 </tr>
 <tr>
 <td>92</td>
-<td class="right"><span class="badge badge-green">43.45%</span></td>
 <td><strong>KalpaTech</strong></td>
+<td class="right"><span class="badge badge-green">43.45%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">1.02%</td>
 <td class="right mono">0.952x</td>
 <td class="right mono">3.131%</td>
 <td class="right mono">1,896,883</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>93</td>
-<td class="right"><span class="badge badge-green">43.34%</span></td>
 <td><strong>Provalidator</strong></td>
+<td class="right"><span class="badge badge-green">43.34%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.91%</td>
 <td class="right mono">0.950x</td>
 <td class="right mono">3.500%</td>
-<td class="right mono">2,120,209</td>
+<td class="right mono">2,120,243</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.4</span></td>
 </tr>
 <tr>
 <td>94</td>
-<td class="right"><span class="badge badge-green">43.26%</span></td>
 <td><strong>0base.vc</strong></td>
+<td class="right"><span class="badge badge-green">43.26%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.84%</td>
 <td class="right mono">0.948x</td>
-<td class="right mono">3.816%</td>
+<td class="right mono">3.815%</td>
 <td class="right mono">2,311,657</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-yellow">Outside</span></td>
 <td class="right"><span class="badge badge-yellow">60.3</span></td>
 </tr>
 <tr>
 <td>95</td>
-<td class="right"><span class="badge badge-green">43.14%</span></td>
 <td><strong>DragonStake 🐲</strong></td>
+<td class="right"><span class="badge badge-green">43.14%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.71%</td>
 <td class="right mono">0.946x</td>
 <td class="right mono">4.487%</td>
 <td class="right mono">2,718,699</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-red">Inside 1/3</span></td>
 <td class="right"><span class="badge badge-yellow">60.2</span></td>
 </tr>
 <tr>
 <td>96</td>
-<td class="right"><span class="badge badge-green">43.07%</span></td>
 <td><strong>nylira.net</strong></td>
+<td class="right"><span class="badge badge-green">43.07%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.64%</td>
 <td class="right mono">0.944x</td>
 <td class="right mono">4.998%</td>
 <td class="right mono">3,028,154</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-red">Inside 1/3</span></td>
 <td class="right"><span class="badge badge-yellow">60.2</span></td>
 </tr>
 <tr>
 <td>97</td>
-<td class="right"><span class="badge badge-green">43.06%</span></td>
 <td><strong>Inotel</strong></td>
+<td class="right"><span class="badge badge-green">43.06%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.64%</td>
 <td class="right mono">0.944x</td>
 <td class="right mono">5.011%</td>
 <td class="right mono">3,035,945</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-red">Inside 1/3</span></td>
 <td class="right"><span class="badge badge-yellow">60.2</span></td>
 </tr>
 <tr>
 <td>98</td>
-<td class="right"><span class="badge badge-green">42.96%</span></td>
 <td><strong>SG-1</strong></td>
+<td class="right"><span class="badge badge-green">42.96%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.54%</td>
 <td class="right mono">0.942x</td>
 <td class="right mono">5.967%</td>
 <td class="right mono">3,614,949</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-red">Inside 1/3</span></td>
 <td class="right"><span class="badge badge-yellow">60.1</span></td>
 </tr>
 <tr>
 <td>99</td>
-<td class="right"><span class="badge badge-green">42.96%</span></td>
 <td><strong>Allnodes</strong></td>
+<td class="right"><span class="badge badge-green">42.96%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.53%</td>
 <td class="right mono">0.942x</td>
-<td class="right mono">6.008%</td>
-<td class="right mono">3,640,129</td>
+<td class="right mono">6.010%</td>
+<td class="right mono">3,641,494</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-red">Inside 1/3</span></td>
 <td class="right"><span class="badge badge-yellow">60.1</span></td>
 </tr>
 <tr>
 <td>100</td>
-<td class="right"><span class="badge badge-green">42.89%</span></td>
 <td><strong>DKCMC</strong></td>
+<td class="right"><span class="badge badge-green">42.89%</span></td>
 <td class="right mono">42.43%</td>
 <td class="right mono">0.46%</td>
 <td class="right mono">0.940x</td>
 <td class="right mono">6.882%</td>
 <td class="right mono">4,169,388</td>
 <td class="right"><span class="badge badge-green">100</span></td>
-<td class="right"><span class="badge badge-red">Inside 1/3</span></td>
 <td class="right"><span class="badge badge-yellow">60.1</span></td>
 </tr>
 </tbody>
@@ -1448,8 +1347,7 @@ tr:hover{background:#1a1a1a}
 <strong>Multiplier</strong> — Nakamoto Multiplier (K_NB). Values above 1.0 indicate the validator benefits from the bonus mechanism.<br>
 <strong>Stake Share</strong> — Validator's proportion of total bonded stake.<br>
 <strong>Confidence</strong> — How stable the APR is against additional delegations. 100 = very stable, 0 = highly sensitive.<br>
-<strong>Signal</strong> — Delegation impact on decentralization. <span class="badge badge-red">Inside 1/3</span> = top validators controlling 1/3 of stake (consider delegating elsewhere). <span class="badge badge-yellow">Outside</span> = between 1/3 and top 20. <span class="badge badge-green">Beyond top 20</span> = smaller validators (best for decentralization).<br>
-<strong>Score</strong> — Composite ranking: APR (51%) + Stake size (12%) + Stability (10%). Higher is better.
+<strong>Score</strong> — Composite ranking: APR (51%) + Self-bond (17%) + Stake size (12%) + Stability (10%) + Uptime (10%). Higher is better. Score 80+ = Excellent, 60+ = Recommended, 40+ = Opportunistic.
 </div>
 </div>
 
@@ -1514,7 +1412,7 @@ tr:hover{background:#1a1a1a}
 <td class="right mono">46.97%</td>
 <td class="right mono">0.702%</td>
 <td class="right mono">Very Stable</td>
-<td class="right mono">425,602</td>
+<td class="right mono">425,604</td>
 </tr>
 <tr>
 <td>6</td>
@@ -1529,7 +1427,7 @@ tr:hover{background:#1a1a1a}
 <td>7</td>
 <td><strong>SolidarityNode</strong></td>
 <td class="right"><span class="badge badge-yellow">62.3</span></td>
-<td class="right mono">46.45%</td>
+<td class="right mono">46.44%</td>
 <td class="right mono">0.795%</td>
 <td class="right mono">Very Stable</td>
 <td class="right mono">481,443</td>
@@ -1646,10 +1544,10 @@ document.querySelectorAll('#apr-table th[data-sort]').forEach(th => {
 });
 
 // Validator data for calculator (ALL validators)
-const validators = [{"moniker": "KaLaMuC", "operator": "atonevaloper15edkl4ks6q0u7pn3gargp7ew952qu82k226n39", "tokens": 14673870911, "delegator_apr": 1.7427539514673356, "share": 0.0002422015988695246}, {"moniker": "Stella \ud83d\udc9c\ud83d\udc3e", "operator": "atonevaloper1rs3vdtdwq8mnnr92zsgugrrs0zue0ejnkh989j", "tokens": 15950604181, "delegator_apr": 1.6372182892519598, "share": 0.00026327489583386615}, {"moniker": "kgnodes", "operator": "atonevaloper1nazhjum6yd5mh2dfwyfgzaejd8xxrcup5agtm3", "tokens": 26408037526, "delegator_apr": 1.1568960063131994, "share": 0.0004358815032922845}, {"moniker": "AkatSuki", "operator": "atonevaloper1ez8k70qhcnslpc3zqtye5m39c4qp25dgkn7em5", "tokens": 31215149288, "delegator_apr": 1.0440714665405901, "share": 0.000515225949060041}, {"moniker": "PrimeStake \ud83c\udf0d\ud83d\udee1\ufe0f", "operator": "atonevaloper1n5z25m5paxl2cy0c2g07zx04wnv23s4quyaur8", "tokens": 82128277640, "delegator_apr": 0.6598403367696456, "share": 0.0013555796065983414}, {"moniker": "Winnode", "operator": "atonevaloper1kdxqxpy55tsm6jjeupqhj6spjp8zwz32fyluru", "tokens": 87460444558, "delegator_apr": 0.645478161028403, "share": 0.0014435904226135395}, {"moniker": "MictoNode", "operator": "atonevaloper1fg97ymps3jsw8w7m6wtpnhn6faze070jkr9kyu", "tokens": 91775528925, "delegator_apr": 0.6350772445052117, "share": 0.001514813642395365}, {"moniker": "\ud83d\udc3eTRACE\u2122", "operator": "atonevaloper1vvzwx7kjk9yx27vegp74tqu99k2vlz7treqxfw", "tokens": 112687768330, "delegator_apr": 0.595955540408946, "share": 0.0018599834922975067}, {"moniker": "CoinHunters", "operator": "atonevaloper1ahtj0s232nen0agnrf75uvf94prk2gmtp45epn", "tokens": 114590205487, "delegator_apr": 0.5931051329921844, "share": 0.0018913844310115568}, {"moniker": "dnsarz", "operator": "atonevaloper1uuqu7tmepex365vq2pluf25jqvutk8rrq5jvm0", "tokens": 115009636384, "delegator_apr": 0.5924893898455431, "share": 0.001898307405493534}, {"moniker": "Fluxen | Indonode", "operator": "atonevaloper10mf53lhx7x2s7vgrulsxq4g2z9n7dm4t472su3", "tokens": 118505432084, "delegator_apr": 0.5875269591851188, "share": 0.0019560077432569326}, {"moniker": "SECARD", "operator": "atonevaloper1p64w6kc8f3le84x4jqytugpqxyrcxfqu26dum6", "tokens": 120632135059, "delegator_apr": 0.5846487227789808, "share": 0.001991110332341279}, {"moniker": "Tanjira", "operator": "atonevaloper1dh29h674ngeqenmc0d3nuuu8fqvf9u7gwzkdu5", "tokens": 122176927121, "delegator_apr": 0.5826208593045172, "share": 0.0020166081106444034}, {"moniker": "NodeRuneR", "operator": "atonevaloper1zktzg639sqfspncww5qxcefpnf33h8p0wnqka6", "tokens": 122221540690, "delegator_apr": 0.5825630562336529, "share": 0.0020173444860567685}, {"moniker": "owlstake", "operator": "atonevaloper170m5fa0w6pdgsyqhkcp8fyqavl2l66c8t86sfn", "tokens": 131344563234, "delegator_apr": 0.5715679408943655, "share": 0.0021679257921130403}, {"moniker": "\ud83d\udc4b 79anvi \ud83c\udf40", "operator": "atonevaloper12fh3e4sj9m3787u4r5zhxx5ghqwf25a8qzatjw", "tokens": 132189123849, "delegator_apr": 0.5706268232925265, "share": 0.0021818658037524976}, {"moniker": "CryptoDungeon", "operator": "atonevaloper13x4pynlp86prhcmtns742kgsgu7pjtzjuy3vwr", "tokens": 132746141180, "delegator_apr": 0.570012676801703, "share": 0.0021910597300848532}, {"moniker": "\ud83c\udfc6OshVanK\ud83c\udfc6", "operator": "atonevaloper186av4ahtc685uarfqnuzp3683y9vypuz8fzn69", "tokens": 142097307093, "delegator_apr": 0.5604213452104134, "share": 0.0023454066879639076}, {"moniker": "linkednode", "operator": "atonevaloper1r4agrfcandmy7a7hu6wy6nejtavx5h99z5ua0f", "tokens": 142295404153, "delegator_apr": 0.5602317959015974, "share": 0.0023486764062921085}, {"moniker": "Shazoes", "operator": "atonevaloper17f2sq92lqjxwztemmy0aeave07xqg4qtdtp73l", "tokens": 144300698110, "delegator_apr": 0.5583423274908659, "share": 0.0023817750620956507}, {"moniker": "Revonode", "operator": "atonevaloper10nnweapu0gqyj0zzw45w7vg58yc4aagwkmnx7x", "tokens": 145967066370, "delegator_apr": 0.5568117033134112, "share": 0.002409279533092113}, {"moniker": "01node", "operator": "atonevaloper17mggn4znyeyg25wd7498qxl7r2jhgue84urfgn", "tokens": 147908119122, "delegator_apr": 0.5550722557533471, "share": 0.00244131784683195}, {"moniker": "MIPEnode", "operator": "atonevaloper1e3vld469ekks28mhtd4aqua3mdaz64qgj2f8cj", "tokens": 154420201362, "delegator_apr": 0.5495559968190291, "share": 0.0025488039178260384}, {"moniker": "BonyNode\ud83d\udc9a", "operator": "atonevaloper13nwzm5dfd26ue74jr6sc39gyn3qze0rjte8v92", "tokens": 166262268904, "delegator_apr": 0.5406321807028809, "share": 0.0027442647958717376}, {"moniker": "StakeUp", "operator": "atonevaloper1nx4tej0d5f7pnarg56a9ykxmsdlt4e8xwvxazz", "tokens": 166916260711, "delegator_apr": 0.540176247884722, "share": 0.002755059347784023}, {"moniker": "sychonix", "operator": "atonevaloper16l85m5pasrv0c43ewkfdf0hljx7fnc3d2v8w9l", "tokens": 168604304081, "delegator_apr": 0.5390157691337721, "share": 0.002782921580296142}, {"moniker": "HazenNetworkSolutions", "operator": "atonevaloper1tz6hxmvqqqj6n67usvcwryy6ddl62aw8j7954p", "tokens": 169027977308, "delegator_apr": 0.5387281454360178, "share": 0.0027899145771406687}, {"moniker": "Kynraze", "operator": "atonevaloper12gpns3u5aguwl8n5n6j7x94tm98nfvljlxhq8l", "tokens": 169492338657, "delegator_apr": 0.5384145510396136, "share": 0.002797579157391044}, {"moniker": "CroutonDigital", "operator": "atonevaloper14ekxy6xuamq022ueqq3scgmtkxl8xr7ljuu358", "tokens": 172426856207, "delegator_apr": 0.5364718649734962, "share": 0.0028460152412867995}, {"moniker": "Vinjan.Inc | RESTAKE", "operator": "atonevaloper17x76ltae2x4e93t8hry6fxeynlr29n7h9wzfmf", "tokens": 172541820105, "delegator_apr": 0.5363971025980536, "share": 0.0028479127937510915}, {"moniker": "ruangnode", "operator": "atonevaloper1phwcgsqpscthtuqwz7yfqqkpew2y0hscqygk9m", "tokens": 174668247669, "delegator_apr": 0.5350320067333248, "share": 0.0028830108370012167}, {"moniker": "AlxVoy \u26a1 ANODE.TEAM", "operator": "atonevaloper1mxpzhjj6mqam6uuk8e4vcv32rzlpu28je8vakc", "tokens": 174792046746, "delegator_apr": 0.5349535549768079, "share": 0.002885054219730275}, {"moniker": "\ud83d\udd25STAVR\ud83d\udd25 REStake ON\u2705", "operator": "atonevaloper13v0v7meel8kdevgcz9t379s0gcl7kldu04vrvh", "tokens": 179162312224, "delegator_apr": 0.5322535759586986, "share": 0.0029571882389455057}, {"moniker": "CrowdControl", "operator": "atonevaloper1q4p7fn0wafmt64c23d78k64ggxr34mzaszzxt8", "tokens": 181061224950, "delegator_apr": 0.5311210353367585, "share": 0.0029885310046779013}, {"moniker": "ITRocket", "operator": "atonevaloper1pucqpsdadfgrvk90tt93slpwwu4vdf24p2yvsq", "tokens": 185137454831, "delegator_apr": 0.5287683718018465, "share": 0.0030558117788189523}, {"moniker": "cunum", "operator": "atonevaloper159yk55uahpnywd0yht9tm2qr93eegh9gz283cy", "tokens": 187931445650, "delegator_apr": 0.5272147256014104, "share": 0.0031019283793869245}, {"moniker": "equinoxDAO", "operator": "atonevaloper1h59eyhvxhhznhhhe7j2l8xdcctkcw76em8hrcr", "tokens": 190234475507, "delegator_apr": 0.5259683992299581, "share": 0.0031399413561258374}, {"moniker": "bitszn | valopers.com", "operator": "atonevaloper1elcgyvv9ym2m523hu88atukd0dmhrjv9fhg4mu", "tokens": 195161644006, "delegator_apr": 0.5234007563644646, "share": 0.0032212674149139633}, {"moniker": "KonsorTech", "operator": "atonevaloper19zhyxjkxkwh8umftc9q2zw8skvzxs0n3kpun39", "tokens": 197562822471, "delegator_apr": 0.522195871230815, "share": 0.0032609003970303662}, {"moniker": "Foxinodes", "operator": "atonevaloper1h7akavny3gx37rc57cth7h7829v6z72j3qmtnq", "tokens": 200034927127, "delegator_apr": 0.5209856167637749, "share": 0.003301704061168311}, {"moniker": "UTSA", "operator": "atonevaloper1982jsr4msdppq0azc3qhf80ngkrsjyqmgepkyk", "tokens": 201201787487, "delegator_apr": 0.5204246952265703, "share": 0.003320963835672502}, {"moniker": "LuckyStar", "operator": "atonevaloper160u4kq3ygau92fumg883tplcretptvk7pynh4v", "tokens": 201218140466, "delegator_apr": 0.52041688040963, "share": 0.003321233752021371}, {"moniker": "\ud83d\udd25 BIERFORGE \u2692 \ud83d\udd25 REStake", "operator": "atonevaloper1crsm4ds7tgwx6zhea3k3qt0hj82k3k4lq3qj4j", "tokens": 202736039012, "delegator_apr": 0.5196969913844404, "share": 0.003346287635689336}, {"moniker": "TaxiStake", "operator": "atonevaloper1hk38pmr663m5achae0as20zzp27uxj3yyuvuh3", "tokens": 205068300656, "delegator_apr": 0.5186116442188358, "share": 0.003384783101717691}, {"moniker": "Xilodyne", "operator": "atonevaloper1rtlg9jnlezwg83eep5zu25sfxndgud5a837zsq", "tokens": 206689047623, "delegator_apr": 0.5178718343557651, "share": 0.0034115345641744085}, {"moniker": "VALIDARIOS", "operator": "atonevaloper1euytennr2awmshq6e55kcw5v0fe5yvx62kndyh", "tokens": 209113776936, "delegator_apr": 0.5167864487728395, "share": 0.0034515562680585664}, {"moniker": "IAmScRay", "operator": "atonevaloper16yfrzsnnk8qk85h2c2e33czm8h6ezdxrrpulqv", "tokens": 209259043225, "delegator_apr": 0.5167222215924344, "share": 0.0034539539808141877}, {"moniker": "NODEJUMPER", "operator": "atonevaloper1pptwysv6ew8e55kzf8nr3vtfxhc9x0gfyfahx0", "tokens": 209529405541, "delegator_apr": 0.5166029223081936, "share": 0.003458416483285855}, {"moniker": "SyaNodes", "operator": "atonevaloper1prfw7r9s79dlzj8hr5fpp6vlj4yan34hfa5hlp", "tokens": 224165539376, "delegator_apr": 0.5105740867620675, "share": 0.003699995207646036}, {"moniker": "PathrockNetwork", "operator": "atonevaloper1ke507rker0xenhf2zwvjwr8m9srfwgzsfxp0kk", "tokens": 229588706275, "delegator_apr": 0.5085353812577688, "share": 0.003789508036390457}, {"moniker": "silent", "operator": "atonevaloper1cl9p5p60znznu297ka6lxgtl9fax53c74r7hwk", "tokens": 233131413635, "delegator_apr": 0.5072548067333901, "share": 0.0038479826810239744}, {"moniker": "Tecnodes", "operator": "atonevaloper1qru73rflllclslgcxglchvuj2z5pvhzldr6lem", "tokens": 236666852394, "delegator_apr": 0.5060150799527058, "share": 0.003906337352761831}, {"moniker": "Apollo", "operator": "atonevaloper1hrepv77qv6nh7953jrnqpar4c89yxg5hf8w4qr", "tokens": 240612154884, "delegator_apr": 0.5046746435756826, "share": 0.003971457086804578}, {"moniker": "NexuSecurus", "operator": "atonevaloper1trmnr6hqu5v50xr0s8e3wu4xqkl68yrsa3tnm4", "tokens": 251221464691, "delegator_apr": 0.5012789091164093, "share": 0.00414657051214017}, {"moniker": "StakerHouse", "operator": "atonevaloper18t9fc4fdg6y7fa3ctmyfcun9td6ema3f34j6lr", "tokens": 261313585906, "delegator_apr": 0.49830461014256633, "share": 0.004313147409884698}, {"moniker": "Citizen Web3", "operator": "atonevaloper1e859xaue4k2jzqw20cv6l7p3tmc378pcclyn60", "tokens": 263321251653, "delegator_apr": 0.4977401095460016, "share": 0.004346285213594997}, {"moniker": "Roomit", "operator": "atonevaloper10szh6uwqx8qy0lsp3fpkvnj99tsf2nf4g9uazc", "tokens": 266497807551, "delegator_apr": 0.4968643238515712, "share": 0.00439871629480461}, {"moniker": "plantree", "operator": "atonevaloper1mlxsccj7dmk6dy4qljzusgqyr8f0uyyattkmly", "tokens": 269413694045, "delegator_apr": 0.4960785850444181, "share": 0.004446844861237577}, {"moniker": "CoreStake", "operator": "atonevaloper1222c3qnzny0e6spfdhr59386tlfhlatnuc65n6", "tokens": 272851048367, "delegator_apr": 0.4951738948065486, "share": 0.004503580586781229}, {"moniker": "ChainTools", "operator": "atonevaloper1per5z63kvyzgy0hqfkkwd45gg4rnjt4c7jdrkr", "tokens": 289902696371, "delegator_apr": 0.49100319075825594, "share": 0.004785028913196122}, {"moniker": "[NODERS]", "operator": "atonevaloper1f2r68y2htcmp4rfe2wfn9f3nvzh9xsq9y0vdyz", "tokens": 296320595451, "delegator_apr": 0.4895577520281944, "share": 0.004890960431061256}, {"moniker": "WeStaking", "operator": "atonevaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvzqm758", "tokens": 299542161133, "delegator_apr": 0.48885554028191774, "share": 0.0049441344274645275}, {"moniker": "StakeLab.zone", "operator": "atonevaloper1gpqlu4ml3hqkfqf3vyrvj8040c6jdrt0l8eg34", "tokens": 303149544998, "delegator_apr": 0.4880869438304658, "share": 0.005003676599065898}, {"moniker": "BZE Community", "operator": "atonevaloper1sa42hn5fuupm5wpgz6msx4nmrpec6az96vjqjw", "tokens": 316467934218, "delegator_apr": 0.4854010677848173, "share": 0.0052235051080541115}, {"moniker": "Nodeist \ud83d\udee1\ufe0f Slash Protected", "operator": "atonevaloper15e709ulu0sxgpwzu3vftkxd00eexapmj76e7kh", "tokens": 349901810089, "delegator_apr": 0.479559469063324, "share": 0.0057753525545442596}, {"moniker": "NyanCat", "operator": "atonevaloper1h7xtcxsh356vfcygglrcn67c8jk47mkx40mdda", "tokens": 355064475029, "delegator_apr": 0.47875549613625146, "share": 0.005860565632298562}, {"moniker": "AVIAONE.com \ud83d\udfe2", "operator": "atonevaloper1342p4lqh94s8qrk48vz2x6nlh3p2hqx4autnd9", "tokens": 359562118620, "delegator_apr": 0.4780739036715396, "share": 0.00593480210851486}, {"moniker": "Cogwheel \u2699\ufe0f", "operator": "atonevaloper14ddv0apf90h6u46zy4e6msct9hx04nte0zcyfe", "tokens": 369429100580, "delegator_apr": 0.476636759966345, "share": 0.006097662939254299}, {"moniker": "NosNode\ud83d\udd2e", "operator": "atonevaloper10jm8fvdyqlj78w0j5nawc76wsn4pqmdxkny2gd", "tokens": 398352664243, "delegator_apr": 0.47283421928884906, "share": 0.006575064805924099}, {"moniker": "Regenerator | Green Validator \ud83c\udf31", "operator": "atonevaloper174tvh2dty7vsvwn2cfsmkwq8tplqgr5f7rsyuj", "tokens": 401849934443, "delegator_apr": 0.47241153271276803, "share": 0.006632789481250483}, {"moniker": "Inter Blockchain Services", "operator": "atonevaloper1ngchl63yr5ew7ua7y72z4p80s32u6g9u09vguf", "tokens": 412239209404, "delegator_apr": 0.4711981635924875, "share": 0.006804271091107294}, {"moniker": "Ubik Capital", "operator": "atonevaloper1q6d3d089hg59x6gcx92uumx70s5y5wadlklzhr", "tokens": 425601592795, "delegator_apr": 0.4697246563214018, "share": 0.00702482575194881}, {"moniker": "Umbrella \u2614", "operator": "atonevaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfsscfjshg", "tokens": 469343816628, "delegator_apr": 0.46548795928033787, "share": 0.00774681905655934}, {"moniker": "SolidarityNode", "operator": "atonevaloper1jcrf2cfqn4v85ujr5ahn48g02xw2ltuuqztdf4", "tokens": 481442505580, "delegator_apr": 0.4644520453424962, "share": 0.00794651563465877}, {"moniker": "ProMEX Hub", "operator": "atonevaloper1mec2ywru4c0pn0zm3uk2aa8rr0dfza4s7qfpm3", "tokens": 510169351466, "delegator_apr": 0.46218922515142, "share": 0.008420670548946036}, {"moniker": "Kleomedes", "operator": "atonevaloper1re7e8n5arf7c69mr75fqp2v5lcl0ftrr56uxkm", "tokens": 527268990469, "delegator_apr": 0.46095934938901123, "share": 0.008702910997409682}, {"moniker": "Crypto Plant", "operator": "atonevaloper1g85n0rvyfrmp9kz0s29mx3v5gcf4as2aew22k7", "tokens": 533558038933, "delegator_apr": 0.46052684358546014, "share": 0.008806715753672522}, {"moniker": " Silk Nodes", "operator": "atonevaloper1fvpj4kfk49s6her9fmak4dykz447vlx3uuj9hw", "tokens": 727104434080, "delegator_apr": 0.4508746166920504, "share": 0.012001322455909184}, {"moniker": "Crosnest", "operator": "atonevaloper1qlhx2zev88jsy6ghsluf7frfxrutkkf3dm29hf", "tokens": 742229788078, "delegator_apr": 0.45033237704249296, "share": 0.01225097607110059}, {"moniker": "Oneiric Stake", "operator": "atonevaloper14m0n559xdj00qwvp6ck0xesprrq26kgpufexgk", "tokens": 797961706758, "delegator_apr": 0.4485118192902608, "share": 0.013170866936587455}, {"moniker": "PRO Delegators", "operator": "atonevaloper1zrp3cnmqg7rlr7n4mc3cfl4khn5p9a2frykp2c", "tokens": 807739615294, "delegator_apr": 0.448218315690042, "share": 0.013332257553649779}, {"moniker": "GATA HUB", "operator": "atonevaloper10unx6s0cdqntvrumd5hs07rgd5ytcztq7w6s7f", "tokens": 946693510798, "delegator_apr": 0.4447026235405287, "share": 0.015625780228364663}, {"moniker": "Chiter in Cosmos \u269b", "operator": "atonevaloper1603r7hdvmntnh67rr6gnf3myg5sj0020rdm774", "tokens": 1065167326009, "delegator_apr": 0.4424295366663022, "share": 0.017581266114966434}, {"moniker": "NodesHub", "operator": "atonevaloper1d3hahjfnr6579rpt7fkste4jaj6ne0jvqttj05", "tokens": 1167320396341, "delegator_apr": 0.44084002247162574, "share": 0.01926736769742579}, {"moniker": "Onbloc Node", "operator": "atonevaloper10jzj3jjd3frna0ay08sh4zu4fpy957s4vm4dwg", "tokens": 1222991775155, "delegator_apr": 0.4400855571831871, "share": 0.020186259313809983}, {"moniker": "ECO Stake \ud83c\udf31 | REStake.app", "operator": "atonevaloper1v6pes3zvpu926pep0l636wwda357uc20t0x5vd", "tokens": 1256913050645, "delegator_apr": 0.4396586196875763, "share": 0.020746151601891433}, {"moniker": "Makeone", "operator": "atonevaloper1pgh057v06vdg3x0fmt66vk69dwmyp073uj0ugn", "tokens": 1319725868470, "delegator_apr": 0.4389259972632144, "share": 0.021782917224199772}, {"moniker": "Forbole", "operator": "atonevaloper1ysvhj4h3z6szgwauuhvytxks9k6s6ktutnjfpv", "tokens": 1571237881194, "delegator_apr": 0.43657931679742223, "share": 0.02593428341694582}, {"moniker": "POSTHUMAN \ud83e\uddec StakeDrop", "operator": "atonevaloper1vcp7pkg8sk0n8ylhezxxs8qqrnwfld4dsv2sew", "tokens": 1745845181868, "delegator_apr": 0.43534781337006595, "share": 0.028816288284920537}, {"moniker": "Simply Staking", "operator": "atonevaloper1xgkqle5jzfd3lymrttg8edwux2yz8z0rvxqsdd", "tokens": 1836705644605, "delegator_apr": 0.4347995988286683, "share": 0.03031599817622328}, {"moniker": "CloudByte", "operator": "atonevaloper1wvt5zugk97mrl5rm9c3m573f9gj03w2gd7yqyl", "tokens": 1849223463117, "delegator_apr": 0.43472829372904753, "share": 0.030522612755045298}, {"moniker": "KalpaTech", "operator": "atonevaloper1w8cs54tjx5yc9hzp0e2pfmde905pr670hglth4", "tokens": 1896883195910, "delegator_apr": 0.43446542282735584, "share": 0.03130926704375828}, {"moniker": "Provalidator", "operator": "atonevaloper1g48268mu5vfp4wk7dk89r0wdrakm9p5xlxr0l9", "tokens": 2120209099107, "delegator_apr": 0.43339108538466886, "share": 0.034995403520722015}, {"moniker": "0base.vc", "operator": "atonevaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4nq63k9", "tokens": 2311657088307, "delegator_apr": 0.4326353502728942, "share": 0.038155374694370255}, {"moniker": "DragonStake \ud83d\udc32", "operator": "atonevaloper15r4tc0m6hc7z8drq3dzlrtcs6rq2q9l269dvfs", "tokens": 2718698694838, "delegator_apr": 0.4313822806267141, "share": 0.044873856034854505}, {"moniker": "nylira.net", "operator": "atonevaloper1u2mpntxfkq3ztj5aygmuv5dhmg6rghjkh3356j", "tokens": 3028153529387, "delegator_apr": 0.43065503821397516, "share": 0.04998160545968328}, {"moniker": "Inotel", "operator": "atonevaloper1z89utvygweg5l56fsk8ak7t6hh88fd0achx5eg", "tokens": 3035944563433, "delegator_apr": 0.4306386419738178, "share": 0.05011020144599345}, {"moniker": "SG-1", "operator": "atonevaloper1g5n4lanhsvpkcld9lyk7pxyvunsmdh9s9yq3vh", "tokens": 3614948629511, "delegator_apr": 0.4296179221662242, "share": 0.05966703286468355}, {"moniker": "Allnodes", "operator": "atonevaloper17gysx6p6ggvjfgntpv0vsje3xkqc8ddmlnmxwd", "tokens": 3640128677891, "delegator_apr": 0.42958090027588486, "share": 0.06008264562386874}, {"moniker": "DKCMC", "operator": "atonevaloper144xwxcrlntp4wjadhrylzc6p3vdzscyey6a5r0", "tokens": 4169388053676, "delegator_apr": 0.42890621628917197, "share": 0.06881840920045303}];
+const validators = [{"moniker": "KaLaMuC", "operator": "atonevaloper15edkl4ks6q0u7pn3gargp7ew952qu82k226n39", "tokens": 14673870911, "delegator_apr": 1.7427747425864764, "share": 0.0002421954219698381}, {"moniker": "Stella \ud83d\udc9c\ud83d\udc3e", "operator": "atonevaloper1rs3vdtdwq8mnnr92zsgugrrs0zue0ejnkh989j", "tokens": 15950604181, "delegator_apr": 1.6372371660832772, "share": 0.0002632681814990759}, {"moniker": "kgnodes", "operator": "atonevaloper1nazhjum6yd5mh2dfwyfgzaejd8xxrcup5agtm3", "tokens": 26408037526, "delegator_apr": 1.1569061706858244, "share": 0.00043587038694815796}, {"moniker": "AkatSuki", "operator": "atonevaloper1ez8k70qhcnslpc3zqtye5m39c4qp25dgkn7em5", "tokens": 31215149288, "delegator_apr": 1.0440795844140682, "share": 0.0005152128091839291}, {"moniker": "PrimeStake \ud83c\udf0d\ud83d\udee1\ufe0f", "operator": "atonevaloper1n5z25m5paxl2cy0c2g07zx04wnv23s4quyaur8", "tokens": 82128277640, "delegator_apr": 0.6598414851604131, "share": 0.0013555450350707953}, {"moniker": "Winnode", "operator": "atonevaloper1kdxqxpy55tsm6jjeupqhj6spjp8zwz32fyluru", "tokens": 87460444558, "delegator_apr": 0.6454790489068702, "share": 0.0014435536065344114}, {"moniker": "MictoNode", "operator": "atonevaloper1fg97ymps3jsw8w7m6wtpnhn6faze070jkr9kyu", "tokens": 91775528925, "delegator_apr": 0.6350779437237754, "share": 0.0015147750099009614}, {"moniker": "\ud83d\udc3eTRACE\u2122", "operator": "atonevaloper1vvzwx7kjk9yx27vegp74tqu99k2vlz7treqxfw", "tokens": 112687768330, "delegator_apr": 0.59595553000765, "share": 0.0018599360568903743}, {"moniker": "CoinHunters", "operator": "atonevaloper1ahtj0s232nen0agnrf75uvf94prk2gmtp45epn", "tokens": 114590205487, "delegator_apr": 0.5931050708879845, "share": 0.0018913361947820954}, {"moniker": "dnsarz", "operator": "atonevaloper1uuqu7tmepex365vq2pluf25jqvutk8rrq5jvm0", "tokens": 115009636384, "delegator_apr": 0.5924893165725158, "share": 0.0018982589927065308}, {"moniker": "Fluxen | Indonode", "operator": "atonevaloper10mf53lhx7x2s7vgrulsxq4g2z9n7dm4t472su3", "tokens": 118506855384, "delegator_apr": 0.5875248350536504, "share": 0.001955981350805714}, {"moniker": "SECARD", "operator": "atonevaloper1p64w6kc8f3le84x4jqytugpqxyrcxfqu26dum6", "tokens": 120632135059, "delegator_apr": 0.5846485072858434, "share": 0.001991059552788852}, {"moniker": "Tanjira", "operator": "atonevaloper1dh29h674ngeqenmc0d3nuuu8fqvf9u7gwzkdu5", "tokens": 122176927121, "delegator_apr": 0.5826206070284168, "share": 0.0020165566808187352}, {"moniker": "NodeRuneR", "operator": "atonevaloper1zktzg639sqfspncww5qxcefpnf33h8p0wnqka6", "tokens": 122221540690, "delegator_apr": 0.5825628029090754, "share": 0.0020172930374512195}, {"moniker": "owlstake", "operator": "atonevaloper170m5fa0w6pdgsyqhkcp8fyqavl2l66c8t86sfn", "tokens": 131344563234, "delegator_apr": 0.5715674881318447, "share": 0.002167870503212355}, {"moniker": "\ud83d\udc4b 79anvi \ud83c\udf40", "operator": "atonevaloper12fh3e4sj9m3787u4r5zhxx5ghqwf25a8qzatjw", "tokens": 132189123849, "delegator_apr": 0.5706263534592836, "share": 0.0021818101593378356}, {"moniker": "CryptoDungeon", "operator": "atonevaloper13x4pynlp86prhcmtns742kgsgu7pjtzjuy3vwr", "tokens": 132746141180, "delegator_apr": 0.570012195828594, "share": 0.002191003851196262}, {"moniker": "\ud83c\udfc6OshVanK\ud83c\udfc6", "operator": "atonevaloper186av4ahtc685uarfqnuzp3683y9vypuz8fzn69", "tokens": 142097307093, "delegator_apr": 0.5604206902622813, "share": 0.002345346872744259}, {"moniker": "linkednode", "operator": "atonevaloper1r4agrfcandmy7a7hu6wy6nejtavx5h99z5ua0f", "tokens": 142295404153, "delegator_apr": 0.5602311375152726, "share": 0.002348616507684397}, {"moniker": "Shazoes", "operator": "atonevaloper17f2sq92lqjxwztemmy0aeave07xqg4qtdtp73l", "tokens": 144300698110, "delegator_apr": 0.5583416348318954, "share": 0.002381714319368505}, {"moniker": "Revonode", "operator": "atonevaloper10nnweapu0gqyj0zzw45w7vg58yc4aagwkmnx7x", "tokens": 145967066370, "delegator_apr": 0.5568109828907903, "share": 0.002409218088914774}, {"moniker": "01node", "operator": "atonevaloper17mggn4znyeyg25wd7498qxl7r2jhgue84urfgn", "tokens": 147908119122, "delegator_apr": 0.555071503779275, "share": 0.002441255585577222}, {"moniker": "MIPEnode", "operator": "atonevaloper1e3vld469ekks28mhtd4aqua3mdaz64qgj2f8cj", "tokens": 154420201362, "delegator_apr": 0.5495551447867675, "share": 0.0025487389153397025}, {"moniker": "BonyNode\ud83d\udc9a", "operator": "atonevaloper13nwzm5dfd26ue74jr6sc39gyn3qze0rjte8v92", "tokens": 166262268904, "delegator_apr": 0.5406311668035103, "share": 0.0027441948085205536}, {"moniker": "StakeUp", "operator": "atonevaloper1nx4tej0d5f7pnarg56a9ykxmsdlt4e8xwvxazz", "tokens": 166916260711, "delegator_apr": 0.5401752257152878, "share": 0.002754989085137942}, {"moniker": "sychonix", "operator": "atonevaloper16l85m5pasrv0c43ewkfdf0hljx7fnc3d2v8w9l", "tokens": 168604304081, "delegator_apr": 0.5390147259146728, "share": 0.0027828506070758283}, {"moniker": "HazenNetworkSolutions", "operator": "atonevaloper1tz6hxmvqqqj6n67usvcwryy6ddl62aw8j7954p", "tokens": 169027977308, "delegator_apr": 0.5387270969997764, "share": 0.0027898434255770235}, {"moniker": "Kynraze", "operator": "atonevaloper12gpns3u5aguwl8n5n6j7x94tm98nfvljlxhq8l", "tokens": 169492338657, "delegator_apr": 0.5384134969151534, "share": 0.0027975078103565864}, {"moniker": "CroutonDigital", "operator": "atonevaloper14ekxy6xuamq022ueqq3scgmtkxl8xr7ljuu358", "tokens": 172426856207, "delegator_apr": 0.536470775611087, "share": 0.0028459426589804325}, {"moniker": "Vinjan.Inc | RESTAKE", "operator": "atonevaloper17x76ltae2x4e93t8hry6fxeynlr29n7h9wzfmf", "tokens": 172541820105, "delegator_apr": 0.5363960118795463, "share": 0.002847840163051191}, {"moniker": "ruangnode", "operator": "atonevaloper1phwcgsqpscthtuqwz7yfqqkpew2y0hscqygk9m", "tokens": 174668247669, "delegator_apr": 0.5350308912536484, "share": 0.0028829373111912368}, {"moniker": "AlxVoy \u26a1 ANODE.TEAM", "operator": "atonevaloper1mxpzhjj6mqam6uuk8e4vcv32rzlpu28je8vakc", "tokens": 174792046746, "delegator_apr": 0.5349524380741125, "share": 0.0028849806418076327}, {"moniker": "\ud83d\udd25STAVR\ud83d\udd25 REStake ON\u2705", "operator": "atonevaloper13v0v7meel8kdevgcz9t379s0gcl7kldu04vrvh", "tokens": 179162312224, "delegator_apr": 0.5322524100816863, "share": 0.0029571128213793482}, {"moniker": "CrowdControl", "operator": "atonevaloper1q4p7fn0wafmt64c23d78k64ggxr34mzaszzxt8", "tokens": 181061224950, "delegator_apr": 0.5311198489168447, "share": 0.0029884547877730085}, {"moniker": "ITRocket", "operator": "atonevaloper1pucqpsdadfgrvk90tt93slpwwu4vdf24p2yvsq", "tokens": 185137454831, "delegator_apr": 0.528767142707494, "share": 0.003055733846043501}, {"moniker": "cunum", "operator": "atonevaloper159yk55uahpnywd0yht9tm2qr93eegh9gz283cy", "tokens": 187931445650, "delegator_apr": 0.5272134683258162, "share": 0.003101849270493657}, {"moniker": "equinoxDAO", "operator": "atonevaloper1h59eyhvxhhznhhhe7j2l8xdcctkcw76em8hrcr", "tokens": 190234475507, "delegator_apr": 0.5259671193475279, "share": 0.003139861277782553}, {"moniker": "bitszn | valopers.com", "operator": "atonevaloper1elcgyvv9ym2m523hu88atukd0dmhrjv9fhg4mu", "tokens": 195161644006, "delegator_apr": 0.5233994299081336, "share": 0.0032211852625013524}, {"moniker": "KonsorTech", "operator": "atonevaloper19zhyxjkxkwh8umftc9q2zw8skvzxs0n3kpun39", "tokens": 197562822471, "delegator_apr": 0.5221945229193415, "share": 0.003260817233852525}, {"moniker": "Foxinodes", "operator": "atonevaloper1h7akavny3gx37rc57cth7h7829v6z72j3qmtnq", "tokens": 200034927127, "delegator_apr": 0.5209842464997657, "share": 0.0033016198573691796}, {"moniker": "UTSA", "operator": "atonevaloper1982jsr4msdppq0azc3qhf80ngkrsjyqmgepkyk", "tokens": 201201787487, "delegator_apr": 0.5204233147881305, "share": 0.0033208791406887724}, {"moniker": "LuckyStar", "operator": "atonevaloper160u4kq3ygau92fumg883tplcretptvk7pynh4v", "tokens": 201218140466, "delegator_apr": 0.5204154998294389, "share": 0.003321149050153929}, {"moniker": "\ud83d\udd25 BIERFORGE \u2692 \ud83d\udd25 REStake", "operator": "atonevaloper1crsm4ds7tgwx6zhea3k3qt0hj82k3k4lq3qj4j", "tokens": 202740585033, "delegator_apr": 0.5196934578705854, "share": 0.003346277327931938}, {"moniker": "TaxiStake", "operator": "atonevaloper1hk38pmr663m5achae0as20zzp27uxj3yyuvuh3", "tokens": 205068300656, "delegator_apr": 0.5186102308938684, "share": 0.003384696779142706}, {"moniker": "Xilodyne", "operator": "atonevaloper1rtlg9jnlezwg83eep5zu25sfxndgud5a837zsq", "tokens": 206689047623, "delegator_apr": 0.5178704076115518, "share": 0.0034114475593533073}, {"moniker": "VALIDARIOS", "operator": "atonevaloper1euytennr2awmshq6e55kcw5v0fe5yvx62kndyh", "tokens": 209113776936, "delegator_apr": 0.5167850023410594, "share": 0.0034514682425586126}, {"moniker": "IAmScRay", "operator": "atonevaloper16yfrzsnnk8qk85h2c2e33czm8h6ezdxrrpulqv", "tokens": 209259043225, "delegator_apr": 0.5167207739956517, "share": 0.0034538658941650454}, {"moniker": "NODEJUMPER", "operator": "atonevaloper1pptwysv6ew8e55kzf8nr3vtfxhc9x0gfyfahx0", "tokens": 209529405541, "delegator_apr": 0.5166014725474678, "share": 0.003458328282828917}, {"moniker": "SyaNodes", "operator": "atonevaloper1prfw7r9s79dlzj8hr5fpp6vlj4yan34hfa5hlp", "tokens": 224165539376, "delegator_apr": 0.5105725276456392, "share": 0.003699900846174663}, {"moniker": "PathrockNetwork", "operator": "atonevaloper1ke507rker0xenhf2zwvjwr8m9srfwgzsfxp0kk", "tokens": 229588706275, "delegator_apr": 0.5085337851617163, "share": 0.0037894113920614713}, {"moniker": "silent", "operator": "atonevaloper1cl9p5p60znznu297ka6lxgtl9fax53c74r7hwk", "tokens": 233131514952, "delegator_apr": 0.5072531513423408, "share": 0.003847886217667385}, {"moniker": "Tecnodes", "operator": "atonevaloper1qru73rflllclslgcxglchvuj2z5pvhzldr6lem", "tokens": 236666852394, "delegator_apr": 0.5060134381414705, "share": 0.0039062377289192044}, {"moniker": "Apollo", "operator": "atonevaloper1hrepv77qv6nh7953jrnqpar4c89yxg5hf8w4qr", "tokens": 240612154884, "delegator_apr": 0.5046729774505709, "share": 0.0039713558022046866}, {"moniker": "NexuSecurus", "operator": "atonevaloper1trmnr6hqu5v50xr0s8e3wu4xqkl68yrsa3tnm4", "tokens": 251221464691, "delegator_apr": 0.5012771813968281, "share": 0.004146464761599232}, {"moniker": "StakerHouse", "operator": "atonevaloper18t9fc4fdg6y7fa3ctmyfcun9td6ema3f34j6lr", "tokens": 261313585906, "delegator_apr": 0.4983028284728399, "share": 0.004313037411110915}, {"moniker": "Citizen Web3", "operator": "atonevaloper1e859xaue4k2jzqw20cv6l7p3tmc378pcclyn60", "tokens": 263321251653, "delegator_apr": 0.4977383176369249, "share": 0.004346174369703385}, {"moniker": "Roomit", "operator": "atonevaloper10szh6uwqx8qy0lsp3fpkvnj99tsf2nf4g9uazc", "tokens": 266499737685, "delegator_apr": 0.4968619902504854, "share": 0.0043986359710364315}, {"moniker": "plantree", "operator": "atonevaloper1mlxsccj7dmk6dy4qljzusgqyr8f0uyyattkmly", "tokens": 269413694045, "delegator_apr": 0.49607676299731923, "share": 0.004446731452759856}, {"moniker": "CoreStake", "operator": "atonevaloper1222c3qnzny0e6spfdhr59386tlfhlatnuc65n6", "tokens": 272851048367, "delegator_apr": 0.4951720563494755, "share": 0.004503465731364731}, {"moniker": "ChainTools", "operator": "atonevaloper1per5z63kvyzgy0hqfkkwd45gg4rnjt4c7jdrkr", "tokens": 289902696371, "delegator_apr": 0.4910012766497128, "share": 0.00478490687996541}, {"moniker": "[NODERS]", "operator": "atonevaloper1f2r68y2htcmp4rfe2wfn9f3nvzh9xsq9y0vdyz", "tokens": 296320595451, "delegator_apr": 0.4895558117011608, "share": 0.004890835696244911}, {"moniker": "WeStaking", "operator": "atonevaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvzqm758", "tokens": 299542161133, "delegator_apr": 0.48885358721762195, "share": 0.004944008336544659}, {"moniker": "StakeLab.zone", "operator": "atonevaloper1gpqlu4ml3hqkfqf3vyrvj8040c6jdrt0l8eg34", "tokens": 303149544998, "delegator_apr": 0.48808497682477053, "share": 0.005003548989634084}, {"moniker": "BZE Community", "operator": "atonevaloper1sa42hn5fuupm5wpgz6msx4nmrpec6az96vjqjw", "tokens": 316467934218, "delegator_apr": 0.4853990520606159, "share": 0.0052233718923065066}, {"moniker": "Nodeist \ud83d\udee1\ufe0f Slash Protected", "operator": "atonevaloper15e709ulu0sxgpwzu3vftkxd00eexapmj76e7kh", "tokens": 349901810089, "delegator_apr": 0.4795573473796671, "share": 0.005775205264957609}, {"moniker": "NyanCat", "operator": "atonevaloper1h7xtcxsh356vfcygglrcn67c8jk47mkx40mdda", "tokens": 355064475029, "delegator_apr": 0.47875335986950907, "share": 0.005860416169511422}, {"moniker": "AVIAONE.com \ud83d\udfe2", "operator": "atonevaloper1342p4lqh94s8qrk48vz2x6nlh3p2hqx4autnd9", "tokens": 359562118620, "delegator_apr": 0.47807175504154364, "share": 0.005934650752464962}, {"moniker": "Cogwheel \u2699\ufe0f", "operator": "atonevaloper14ddv0apf90h6u46zy4e6msct9hx04nte0zcyfe", "tokens": 369429100580, "delegator_apr": 0.4766345852683201, "share": 0.006097507429742909}, {"moniker": "NosNode\ud83d\udd2e", "operator": "atonevaloper10jm8fvdyqlj78w0j5nawc76wsn4pqmdxkny2gd", "tokens": 398352664243, "delegator_apr": 0.4728319756173874, "share": 0.006574897121169217}, {"moniker": "Regenerator | Green Validator \ud83c\udf31", "operator": "atonevaloper174tvh2dty7vsvwn2cfsmkwq8tplqgr5f7rsyuj", "tokens": 401849934443, "delegator_apr": 0.47240928137428895, "share": 0.006632620324335505}, {"moniker": "Inter Blockchain Services", "operator": "atonevaloper1ngchl63yr5ew7ua7y72z4p80s32u6g9u09vguf", "tokens": 412239209404, "delegator_apr": 0.4711958902449767, "share": 0.006804097560873944}, {"moniker": "Ubik Capital", "operator": "atonevaloper1q6d3d089hg59x6gcx92uumx70s5y5wadlklzhr", "tokens": 425603592795, "delegator_apr": 0.4697221426221748, "share": 0.007024679607314297}, {"moniker": "Umbrella \u2614", "operator": "atonevaloper1lktjhnzkpkz3ehrg8psvmwhafg56kfsscfjshg", "tokens": 469343816628, "delegator_apr": 0.46548558235670545, "share": 0.007746621488399488}, {"moniker": "SolidarityNode", "operator": "atonevaloper1jcrf2cfqn4v85ujr5ahn48g02xw2ltuuqztdf4", "tokens": 481442505580, "delegator_apr": 0.46444964962865204, "share": 0.007946312973610446}, {"moniker": "ProMEX Hub", "operator": "atonevaloper1mec2ywru4c0pn0zm3uk2aa8rr0dfza4s7qfpm3", "tokens": 510169351466, "delegator_apr": 0.46218678839278543, "share": 0.00842045579546168}, {"moniker": "Kleomedes", "operator": "atonevaloper1re7e8n5arf7c69mr75fqp2v5lcl0ftrr56uxkm", "tokens": 527268990469, "delegator_apr": 0.4609568903219347, "share": 0.008702689045909515}, {"moniker": "Crypto Plant", "operator": "atonevaloper1g85n0rvyfrmp9kz0s29mx3v5gcf4as2aew22k7", "tokens": 533558038933, "delegator_apr": 0.4605243766732574, "share": 0.008806491154825808}, {"moniker": " Silk Nodes", "operator": "atonevaloper1fvpj4kfk49s6her9fmak4dykz447vlx3uuj9hw", "tokens": 727104434080, "delegator_apr": 0.4508719747002582, "share": 0.012001016384581571}, {"moniker": "Crosnest", "operator": "atonevaloper1qlhx2zev88jsy6ghsluf7frfxrutkkf3dm29hf", "tokens": 742229788078, "delegator_apr": 0.45032972521513676, "share": 0.012250663632823525}, {"moniker": "Oneiric Stake", "operator": "atonevaloper14m0n559xdj00qwvp6ck0xesprrq26kgpufexgk", "tokens": 797961706758, "delegator_apr": 0.44850913444021384, "share": 0.01317053103821093}, {"moniker": "PRO Delegators", "operator": "atonevaloper1zrp3cnmqg7rlr7n4mc3cfl4khn5p9a2frykp2c", "tokens": 807739615294, "delegator_apr": 0.4482156255161987, "share": 0.013331917539306818}, {"moniker": "GATA HUB", "operator": "atonevaloper10unx6s0cdqntvrumd5hs07rgd5ytcztq7w6s7f", "tokens": 946693510798, "delegator_apr": 0.4446998695963301, "share": 0.015625381722006965}, {"moniker": "Chiter in Cosmos \u269b", "operator": "atonevaloper1603r7hdvmntnh67rr6gnf3myg5sj0020rdm774", "tokens": 1065167822809, "delegator_apr": 0.4424267330193117, "share": 0.01758082593738305}, {"moniker": "NodesHub", "operator": "atonevaloper1d3hahjfnr6579rpt7fkste4jaj6ne0jvqttj05", "tokens": 1167320396341, "delegator_apr": 0.4408371984645685, "share": 0.01926687631917707}, {"moniker": "Onbloc Node", "operator": "atonevaloper10jzj3jjd3frna0ay08sh4zu4fpy957s4vm4dwg", "tokens": 1222991775155, "delegator_apr": 0.4400827194910524, "share": 0.020185744500945783}, {"moniker": "ECO Stake \ud83c\udf31 | REStake.app", "operator": "atonevaloper1v6pes3zvpu926pep0l636wwda357uc20t0x5vd", "tokens": 1256913050645, "delegator_apr": 0.4396557742513176, "share": 0.02074562251001952}, {"moniker": "Makeone", "operator": "atonevaloper1pgh057v06vdg3x0fmt66vk69dwmyp073uj0ugn", "tokens": 1319725868470, "delegator_apr": 0.438923138538081, "share": 0.021782361691555886}, {"moniker": "Forbole", "operator": "atonevaloper1ysvhj4h3z6szgwauuhvytxks9k6s6ktutnjfpv", "tokens": 1571237881194, "delegator_apr": 0.4365764155063756, "share": 0.02593362201145611}, {"moniker": "POSTHUMAN \ud83e\uddec StakeDrop", "operator": "atonevaloper1vcp7pkg8sk0n8ylhezxxs8qqrnwfld4dsv2sew", "tokens": 1745850881868, "delegator_apr": 0.43534485355920477, "share": 0.028815647459012474}, {"moniker": "Simply Staking", "operator": "atonevaloper1xgkqle5jzfd3lymrttg8edwux2yz8z0rvxqsdd", "tokens": 1836835244605, "delegator_apr": 0.43479592202438117, "share": 0.03031736409938619}, {"moniker": "CloudByte", "operator": "atonevaloper1wvt5zugk97mrl5rm9c3m573f9gj03w2gd7yqyl", "tokens": 1849223463117, "delegator_apr": 0.4347253588627066, "share": 0.03052183433278038}, {"moniker": "KalpaTech", "operator": "atonevaloper1w8cs54tjx5yc9hzp0e2pfmde905pr670hglth4", "tokens": 1896883195910, "delegator_apr": 0.4344624831928583, "share": 0.031308468559344105}, {"moniker": "Provalidator", "operator": "atonevaloper1g48268mu5vfp4wk7dk89r0wdrakm9p5xlxr0l9", "tokens": 2120243457444, "delegator_apr": 0.4333879783874167, "share": 0.0349950781200816}, {"moniker": "0base.vc", "operator": "atonevaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4nq63k9", "tokens": 2311657088307, "delegator_apr": 0.432632377443119, "share": 0.03815440161275936}, {"moniker": "DragonStake \ud83d\udc32", "operator": "atonevaloper15r4tc0m6hc7z8drq3dzlrtcs6rq2q9l269dvfs", "tokens": 2718698694838, "delegator_apr": 0.4313792850677882, "share": 0.04487271161091772}, {"moniker": "nylira.net", "operator": "atonevaloper1u2mpntxfkq3ztj5aygmuv5dhmg6rghjkh3356j", "tokens": 3028153529387, "delegator_apr": 0.4306520294637615, "share": 0.04998033077213152}, {"moniker": "Inotel", "operator": "atonevaloper1z89utvygweg5l56fsk8ak7t6hh88fd0achx5eg", "tokens": 3035944563433, "delegator_apr": 0.43063563292619644, "share": 0.0501089234788411}, {"moniker": "SG-1", "operator": "atonevaloper1g5n4lanhsvpkcld9lyk7pxyvunsmdh9s9yq3vh", "tokens": 3614948629511, "delegator_apr": 0.429614894603994, "share": 0.05966551116838461}, {"moniker": "Allnodes", "operator": "atonevaloper17gysx6p6ggvjfgntpv0vsje3xkqc8ddmlnmxwd", "tokens": 3641493677891, "delegator_apr": 0.42957587969444233, "share": 0.06010364294919402}, {"moniker": "DKCMC", "operator": "atonevaloper144xwxcrlntp4wjadhrylzc6p3vdzscyey6a5r0", "tokens": 4169388053676, "delegator_apr": 0.42890317581746773, "share": 0.06881665411538257}];
 
 // Network context for simulation
-const netCtx = {"supply": 153124847711904, "inflation": 0.2, "bonded": 60585359384456, "eta": 0.07, "num_validators": 100, "base_network_apr": 0.4802104010981884, "bonded_ratio": 0.3956598833550779, "annual_validator_rewards": 29093719730687.508, "community_tax": 0.05};
+const netCtx = {"supply": 153127625209342, "inflation": 0.2, "bonded": 60586904540365, "eta": 0.07, "num_validators": 100, "base_network_apr": 0.4802068644354169, "bonded_ratio": 0.39566279734003684, "annual_validator_rewards": 29094247455176.598, "community_tax": 0.05};
 
 // Nakamoto engine functions (ported from nakamoto_engine.py)
 function calcValidatorAPR(stake, supply, inflation, bonded, eta, N, annualRewards) {
