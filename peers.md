@@ -1,6 +1,6 @@
 # AtomOne Peers
 
-Last updated: 2026-08-28 11:00 UTC | Height: 10,099,491 | Verified: 19/44
+Last updated: 2026-08-28 17:00 UTC | Height: 10,103,216 | Verified: 19/44
 
 ## How we collect peers
 
