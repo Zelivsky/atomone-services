@@ -17,8 +17,9 @@ Public infrastructure and tools for [AtomOne](https://github.com/atomone-hub/ato
 | 5 | [State Sync](#state-sync) | [snapshots.apollo-validator.eu/atomone/statesync.html](https://snapshots.apollo-validator.eu/atomone/statesync.html) | 🟢 Active |
 | 6 | [Peers List](#peers-list) | [peers.md](peers.md) (auto-updated every 6h) | 🟢 Active |
 | 7 | [Installation Guide](#installation-guide) | [guide.md](guide.md) | 🟢 Active |
-| 8 | [Nakamoto Bonus Bot](#nakamoto-bonus-bot) | [@atomone_nakamoto_apollo_bot](https://t.me/atomone_nakamoto_apollo_bot) | 🟢 Active |
-| 9 | [Nakamoto Bonus Dashboard](#nakamoto-bonus-dashboard) | [snapshots.apollo-validator.eu/atomone/nakamoto.html](https://snapshots.apollo-validator.eu/atomone/nakamoto.html) | 🟢 Active |
+| 8 | [Validator Monitor Bot](#validator-monitor-bot) | [@atomone_monitor_apollo_bot](https://t.me/atomone_monitor_apollo_bot) | 🟢 Active |
+| 9 | [Nakamoto Bonus Bot](#nakamoto-bonus-bot) | [@atomone_nakamoto_apollo_bot](https://t.me/atomone_nakamoto_apollo_bot) | 🟢 Active |
+| 10 | [Nakamoto Bonus Dashboard](#nakamoto-bonus-dashboard) | [snapshots.apollo-validator.eu/atomone/nakamoto.html](https://snapshots.apollo-validator.eu/atomone/nakamoto.html) | 🟢 Active |
 
 ---
 
@@ -242,6 +243,32 @@ atomoned start
 ### Delegate
 
 Stake ATONE with Apollo Validator: [Delegate on Mintscan](https://www.mintscan.io/wallet/stake?chain=atomone&src=atonevaloper1hrepv77qv6nh7953jrnqpar4c89yxg5hf8w4qr&type=stake)
+
+---
+
+## Validator Monitor Bot
+
+Telegram bot for node health and validator activity monitoring.
+
+**Features:**
+- Missed-block alerts for tracked validators (signing info based)
+- Node status monitoring
+- New governance proposal notifications
+- Custom missed-block threshold per user
+
+**Bot:** [@atomone_monitor_apollo_bot](https://t.me/atomone_monitor_apollo_bot)
+
+**Commands:**
+| Command | Description |
+|---------|-------------|
+| `/status` | Node and network status |
+| `/add <validator>` | Track a validator |
+| `/remove <validator>` | Stop tracking |
+| `/list` | Your tracked validators |
+| `/proposals` | Active governance proposals |
+| `/threshold <N>` | Set missed-block alert threshold |
+| `/apr` | Validator APR overview |
+| `/help` | Help |
 
 ---
 
