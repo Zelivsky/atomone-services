@@ -39,6 +39,6 @@ sudo systemctl restart atomoned && journalctl -fu atomoned -n1000 -o cat
 - **RPC:** https://rpc.atomone.apollo-validator.eu
 - **API:** https://api.atomone.apollo-validator.eu
 - **gRPC:** grpc.atomone.apollo-validator.eu:443
-- **Snapshots:** https://snapshots.apollo-validator.eu/atomone/
+- **Snapshots:** https://snapshots.apollo-validator.eu/atomone/snapshot.html
 - **Peers:** https://snapshots.apollo-validator.eu/atomone/peers.md
 - **Explorer:** https://explorer.apollo-validator.eu

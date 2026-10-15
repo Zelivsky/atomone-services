@@ -549,7 +549,7 @@ sudo systemctl restart atomoned
 - [GitHub](https://github.com/atomone-hub/atomone)
 - [RPC](https://rpc.atomone.apollo-validator.eu)
 - [API](https://api.atomone.apollo-validator.eu/cosmos/base/tendermint/v1beta1/node_info)
-- [Snapshots](https://snapshots.apollo-validator.eu/atomone/)
+- [Snapshots](https://snapshots.apollo-validator.eu/atomone/snapshot.html)
 - [Peers](https://snapshots.apollo-validator.eu/atomone/peers.md)
 - [State Sync](https://snapshots.apollo-validator.eu/atomone/statesync.html)
 - [Explorer](https://explorer.apollo-validator.eu)
