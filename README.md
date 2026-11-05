@@ -129,9 +129,9 @@ Page: [https://snapshots.apollo-validator.eu/atomone/snapshot.html](https://snap
 
 | Latest Snapshot | |
 |-----------------|---|
-| **Height** | 11,119,208 |
+| **Height** | 11,122,942 |
 | **Size** | 11G (zstd) |
-| **Created** | 2026-11-04T18:13 UTC |
+| **Created** | 2026-11-05T00:13 UTC |
 | | **Update frequency** | Every 6 hours |
 | **Node stop required** | No |
 
